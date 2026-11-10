@@ -50,10 +50,39 @@ def summary(r):
     }
 
 
+# 忌口词 → 菜谱里的过敏原标签（口语说"海鲜"，菜谱标的是"甲壳类/贝类/鱼"）
+ALLERGEN_ALIAS = {
+    "海鲜": ["甲壳类", "贝类", "鱼"],
+    "虾": ["甲壳类"], "蟹": ["甲壳类"], "龙虾": ["甲壳类"],
+    "贝": ["贝类"], "蛤": ["贝类"], "蚝": ["贝类"], "生蚝": ["贝类"],
+    "鱼": ["鱼"], "鱼类": ["鱼"],
+    "蛋": ["蛋"], "鸡蛋": ["蛋"], "蛋类": ["蛋"],
+    "奶": ["奶"], "牛奶": ["奶"], "乳制品": ["奶"],
+    "花生": ["花生"], "坚果": ["坚果"], "腰果": ["坚果"],
+    "麸质": ["麸质"], "面食": ["麸质"], "小麦": ["麸质"],
+    "大豆": ["大豆"], "豆制品": ["大豆"], "豆": ["大豆"],
+}
+
+
+def _expand_avoid(avoid):
+    out = set()
+    for a in avoid or []:
+        a = (a or "").strip()
+        if not a:
+            continue
+        out.add(a)
+        for k in ALLERGEN_ALIAS.get(a, []):
+            out.add(k)
+    return out
+
+
 def has_allergen(r, avoid):
+    """忌口/过敏原硬过滤：不做任何放宽。"""
     if not avoid:
         return False
-    return any(a in r.get("allergens", []) for a in avoid)
+    targets = _expand_avoid(avoid)
+    return any(a in targets for a in r.get("allergens", []))
+
 
 
 def search(q=None, tags=None, max_time=None, max_difficulty=None, avoid=None,
