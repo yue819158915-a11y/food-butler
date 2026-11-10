@@ -26,6 +26,7 @@ except Exception:
 class ChatRequest(BaseModel):
     message: str
     history: list = []
+    exclude: list = []   # 已展示过的菜谱 id，用于「换一批」
 
 
 @app.get("/api/health")
@@ -79,13 +80,14 @@ def recipe_detail(rid: str, servings: int = None):
 
 @app.get("/api/recommend")
 def recommend(people: int = 2, max_time: int = None, budget: int = None,
-              avoid: str = None, goal: str = None, n: int = 3):
+              avoid: str = None, goal: str = None, n: int = 3, exclude: str = None):
     """开屏推荐：天气/时段 + 3 道菜"""
     env = daily.context()
     avoid_list = [a.strip() for a in (avoid or "").split(",") if a.strip()]
+    ex = [x for x in (exclude or "").split(",") if x]
     cards, meta = planner.plan(
         {"people": people, "max_time": max_time, "budget": budget,
-         "avoid": avoid_list, "goal": goal, "env": env}, n=n)
+         "avoid": avoid_list, "goal": goal, "env": env}, n=n, exclude=ex, seed=len(ex))
     for c in cards:
         c["full"] = recipes.full(recipes.get(c["recipe"]["id"]))
     return {"ok": True, "env": env, "cards": cards, "meta": meta}
@@ -103,7 +105,7 @@ async def chat(req: ChatRequest, request: Request = None,
             conds, nlu_source = nlu.parse_cook_intent(message, req.history, header_key=x_llm_key)
             env = daily.context()
             ctx = {**conds, "env": env}
-            cards, pmeta = planner.plan(ctx, n=3)
+            cards, pmeta = planner.plan(ctx, n=3, exclude=req.exclude, seed=len(req.history) + len(req.exclude or []))
             reply, gen_source = generator.cook_reply(message, cards, ctx, header_key=x_llm_key, meta=pmeta)
             for c in cards:
                 c["full"] = recipes.full(recipes.get(c["recipe"]["id"]))
