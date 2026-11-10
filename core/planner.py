@@ -60,11 +60,13 @@ def _goal_score(recipe, goal):
     return 0.7
 
 
-def plan(ctx=None, n=3, meal=None):
+def plan(ctx=None, n=3, meal=None, exclude=None, seed=0):
     """ctx: {people, max_time, budget, avoid[], goal, taste{}}；meal: breakfast/lunch/... 覆盖时段
 
+    exclude: 已展示过的菜谱 id，用于「换一批」；seed: 打散随机性的种子（一般传历史轮数）
     返回 (cards, meta)。cards 里每项含 recipe 摘要 + reason。
     """
+    exclude = set(exclude or [])
     ctx = ctx or {}
     people = ctx.get("people") or 2
     max_time = ctx.get("max_time")
@@ -80,6 +82,8 @@ def plan(ctx=None, n=3, meal=None):
     pool = []
     dropped = {"allergen": 0, "time": 0, "budget": 0}
     for r in recipes.load():
+        if r["id"] in exclude:
+            continue
         if avoid and recipes.has_allergen(r, avoid):
             dropped["allergen"] += 1
             continue
@@ -124,7 +128,9 @@ def plan(ctx=None, n=3, meal=None):
             s += 0.08
         if period_key == "supper" and r.get("category") in ("炒菜", "炸物", "凉菜"):
             s += 0.05
-        scored.append((s, r))
+        # 抖动：让分数接近的菜在不同轮次轮换，避免永远是同三道
+        jitter = ((hash(r["name"] + str(seed)) % 1000) / 1000.0) * 0.12
+        scored.append((s + jitter, r))
 
     scored.sort(key=lambda x: -x[0])
 

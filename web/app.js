@@ -61,9 +61,10 @@ async function requestChat(message) {
   let lastErr;
   for (let attempt = 1; attempt <= 2; attempt++) {
     try {
+      const wantAnother = /换一批|换一道|换个菜|换个口味|换换口味|别的菜|其他的菜|还有别的|再来一道|还有吗/.test(message);
       const res = await fetch(apiUrl("/api/chat"), {
         method: "POST", headers: headers(),
-        body: JSON.stringify({ message, history }),
+        body: JSON.stringify({ message, history, exclude: wantAnother ? shownRecipeIds.slice(-9) : [] }),
       });
       const raw = await res.text();
       if (res.status === 403 || res.status === 401) {
@@ -198,6 +199,8 @@ function renderResults(list, relaxed, label = "") {
   } else {
     head = `${prefix}共 ${list.length} 家符合条件的餐厅`;
   }
+  const sb = document.getElementById("btnShuffle");
+  if (sb) sb.hidden = true;
   resultCount.textContent = head;
   resultCount.className = "result-count" + (relaxed ? " relaxed" : "");
   resultList.innerHTML = "";
@@ -258,14 +261,32 @@ init();
 
 /* ---------- 菜谱卡片 ---------- */
 let wxPayload = null;
+let shownRecipeIds = [];
 
 function renderRecipeCards(cards, label = "🍳 菜谱推荐") {
   if (!cards || !cards.length) return;
+  shownRecipeIds = cards.map(c => ((c.full || c.recipe || {}).id)).filter(Boolean);
   resultCount.textContent = `${label} · ${cards.length} 道（营养为估算值）`;
   resultCount.className = "result-count";
   resultList.innerHTML = "";
   cards.forEach(c => resultList.appendChild(recipeCard(c)));
+  ensureShuffleBtn().hidden = false;
   document.querySelector(".result-panel").scrollTop = 0;
+}
+
+/* 「换一批」：把已展示的 id 传给后端，排除后重新挑 */
+function ensureShuffleBtn() {
+  let b = document.getElementById("btnShuffle");
+  if (!b) {
+    b = document.createElement("button");
+    b.id = "btnShuffle";
+    b.className = "ghost";
+    b.textContent = "🔄 换一批菜谱";
+    b.style.marginTop = "10px";
+    b.addEventListener("click", () => send("换一批"));
+    document.querySelector(".result-panel").appendChild(b);
+  }
+  return b;
 }
 
 function recipeCard(c) {
