@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "version": 1,
+    "created": "2026-11-05",
+    "dataset": "data/restaurants.json",
+    "protocol": "给定条件（绕过 NLU）→ 直接调 store.filter_restaurants → 逐条断言",
+    "predicate_vars": {
+      "price_mid": "价格区间中点，单值等于自身；缺失为 None",
+      "price_min": "价格区间下限",
+      "price_max": "价格区间上限",
+      "category": "11 类目之一",
+      "location": "门店所在路段/商圈",
+      "region": "老城区/市中心商圈/海珠/番禺/顺德/东莞/天河东部/其他区域",
+      "type_raw": "原始菜系类型（52 种）",
+      "note": "原始点评文本"
+    },
+    "note": "断言必须按用户意图写，禁止复用 store._hit_price 等被测实现，否则等于拿实现验证实现"
+  },
+  "cases": [
+    {
+      "id": "price_cap_40",
+      "direction": "人均上限",
+      "utterance": "人均40以下",
+      "given": { "price_max": 40 },
+      "must": ["price_mid <= 40"]
+    },
+    {
+      "id": "price_cap_30",
+      "direction": "人均上限",
+      "utterance": "人均30以下",
+      "given": { "price_max": 30 },
+      "must": ["price_mid <= 30"]
+    },
+    {
+      "id": "price_floor_150",
+      "direction": "人均下限",
+      "utterance": "人均150以上",
+      "given": { "price_min": 150 },
+      "must": ["price_mid >= 150"]
+    },
+    {
+      "id": "price_band_80_150",
+      "direction": "人均区间",
+      "utterance": "人均80到150之间",
+      "given": { "price_min": 80, "price_max": 150 },
+      "must": ["80 <= price_mid <= 150"]
+    },
+    {
+      "id": "cat_seafood_cheap",
+      "direction": "类目+价格",
+      "utterance": "海鲜，便宜实惠的那种",
+      "given": { "category": "海鲜", "price_max": 60 },
+      "must": ["category == '海鲜'", "price_mid <= 60"]
+    },
+    {
+      "id": "cat_yue_cap40",
+      "direction": "类目+价格",
+      "utterance": "粤菜人均40以下",
+      "given": { "category": "粤菜", "price_max": 40 },
+      "must": ["category == '粤菜'", "price_mid <= 40"]
+    },
+    {
+      "id": "cat_hotpot_cap80",
+      "direction": "类目+价格",
+      "utterance": "火锅人均80以内",
+      "given": { "category": "火锅", "price_max": 80 },
+      "must": ["category == '火锅'", "price_mid <= 80"]
+    },
+    {
+      "id": "cat_zaocha_cap40",
+      "direction": "类目+价格",
+      "utterance": "早茶人均40以下",
+      "given": { "category": "早茶", "price_max": 40 },
+      "must": ["category == '早茶'", "price_mid <= 40"]
+    },
+    {
+      "id": "cat_dessert_xihua",
+      "direction": "类目+地点",
+      "utterance": "西华路有什么甜品",
+      "given": { "category": "甜品", "location": "西华路" },
+      "must": ["category == '甜品'", "'西华路' in location"]
+    },
+    {
+      "id": "loc_zhujiang",
+      "direction": "地点",
+      "utterance": "珠江新城那边",
+      "given": { "location": "珠江新城" },
+      "must": ["'珠江新城' in location"]
+    },
+    {
+      "id": "kw_seafood_triple",
+      "direction": "口味叠加",
+      "utterance": "海鲜 便宜 新鲜",
+      "given": { "keywords": ["海鲜", "便宜", "新鲜"] },
+      "expect_min": 3,
+      "note": "越具体不应越少；AND 匹配下当前仅 2 家"
+    },
+    {
+      "id": "impossible_riliao_5",
+      "direction": "无解兜底",
+      "utterance": "日料人均5块",
+      "given": { "category": "日料", "price_max": 5 },
+      "expect_zero": true,
+      "note": "无解时应返回 0 并告知，而不是把条件全丢掉返回全库"
+    },
+    {
+      "id": "impossible_zaocha_10",
+      "direction": "无解兜底",
+      "utterance": "早茶人均10块",
+      "given": { "category": "早茶", "price_max": 10 },
+      "expect_zero": true
+    },
+    {
+      "id": "crowd_elder_kw",
+      "direction": "人群适配",
+      "utterance": "适合老人家吃的，人均40以下",
+      "given": { "category": "粤菜", "keywords": ["炖汤", "清淡", "粥", "白切鸡"], "price_max": 40 },
+      "expect_min": 1,
+      "note": "nlu.py 的 prompt 会把人群词翻成这 4 个关键词，实测 AND 后 0 家"
+    },
+    {
+      "id": "soft_crowd_elder",
+      "direction": "人群适配",
+      "utterance": "适合老人家吃的，人均40以下",
+      "given": { "category": "粤菜", "price_max": 40 },
+      "soft": true,
+      "judge_criteria": "这家店是否适合带长辈去：口味清淡、环境不吵、易消化、不重辣。1=完全不合适 5=非常合适",
+      "note": "NLU 实际产出的条件（未加关键词），用于测量软语义检索效果"
+    },
+    {
+      "id": "soft_date",
+      "direction": "场景",
+      "utterance": "适合约会的地方",
+      "given": { "price_min": 100 },
+      "soft": true,
+      "judge_criteria": "这家店是否适合约会：环境安静或有氛围、适合两人、不喧闹。1=完全不合适 5=非常合适"
+    },
+    {
+      "id": "soft_wokhei",
+      "direction": "口味",
+      "utterance": "有锅气的大排档",
+      "given": { "keywords": ["大排档"] },
+      "soft": true,
+      "judge_criteria": "这家店是否属于有锅气的大排档/小炒类：现炒、火候足、烟火气。1=完全不合适 5=非常合适"
+    }
+  ]
+}

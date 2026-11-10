@@ -1,0 +1,2326 @@
+{
+ "_meta": {
+  "note": "常见食材营养成分（每100g可食部），数值为公开食物成分资料的近似值，用于估算，非医疗依据",
+  "fields": "kcal 千卡; protein_g 蛋白质; fat_g 脂肪; carb_g 碳水; sodium_mg 钠; fiber_g 膳食纤维; edible_ratio 可食部比例; default_unit_g 常用单位折算克数",
+  "version": "1.0"
+ },
+ "items": [
+  {
+   "name": "大米",
+   "aliases": [
+    "米饭",
+    "白米饭",
+    "大米饭",
+    "米"
+   ],
+   "kcal": 116,
+   "protein_g": 2.6,
+   "fat_g": 0.3,
+   "carb_g": 25.9,
+   "sodium_mg": 2,
+   "fiber_g": 0.3,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "碗": 150
+   },
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "糙米",
+   "aliases": [
+    "红米",
+    "紫米",
+    "杂粮饭"
+   ],
+   "kcal": 112,
+   "protein_g": 2.8,
+   "fat_g": 0.9,
+   "carb_g": 23.0,
+   "sodium_mg": 3,
+   "fiber_g": 1.2,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "碗": 150
+   },
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "面条",
+   "aliases": [
+    "含油面条",
+    "手工面",
+    "拉面",
+    "挂面",
+    "捞面",
+    "熟面",
+    "细蓉",
+    "面",
+    "面条约",
+    "面胚",
+    "鲜面"
+   ],
+   "kcal": 109,
+   "protein_g": 3.5,
+   "fat_g": 0.3,
+   "carb_g": 23.0,
+   "sodium_mg": 150,
+   "fiber_g": 0.8,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "碗": 200
+   },
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "河粉",
+   "aliases": [
+    "粿条",
+    "米粉",
+    "粉条"
+   ],
+   "kcal": 108,
+   "protein_g": 1.6,
+   "fat_g": 0.2,
+   "carb_g": 24.6,
+   "sodium_mg": 10,
+   "fiber_g": 0.4,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "碗": 200
+   },
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "面粉",
+   "aliases": [
+    "中筋面粉",
+    "低筋面粉",
+    "高筋面粉"
+   ],
+   "kcal": 361,
+   "protein_g": 10.3,
+   "fat_g": 1.5,
+   "carb_g": 75.2,
+   "sodium_mg": 3,
+   "fiber_g": 2.7,
+   "edible_ratio": 1.0,
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "馒头",
+   "aliases": [
+    "花卷"
+   ],
+   "kcal": 221,
+   "protein_g": 7.0,
+   "fat_g": 1.1,
+   "carb_g": 47.0,
+   "sodium_mg": 165,
+   "fiber_g": 1.3,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "个": 100
+   },
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "面包",
+   "aliases": [
+    "吐司",
+    "切片面包"
+   ],
+   "kcal": 312,
+   "protein_g": 8.3,
+   "fat_g": 5.1,
+   "carb_g": 58.6,
+   "sodium_mg": 230,
+   "fiber_g": 2.5,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "片": 30
+   },
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "饺子皮",
+   "aliases": [
+    "馄饨皮",
+    "云吞皮",
+    "春卷皮"
+   ],
+   "kcal": 291,
+   "protein_g": 8.9,
+   "fat_g": 1.2,
+   "carb_g": 61.0,
+   "sodium_mg": 120,
+   "fiber_g": 2.0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "张": 8
+   },
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "年糕",
+   "aliases": [
+    "水磨年糕"
+   ],
+   "kcal": 154,
+   "protein_g": 3.3,
+   "fat_g": 0.6,
+   "carb_g": 34.7,
+   "sodium_mg": 56,
+   "fiber_g": 0.8,
+   "edible_ratio": 1.0,
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "燕麦",
+   "aliases": [
+    "燕麦片"
+   ],
+   "kcal": 377,
+   "protein_g": 15.0,
+   "fat_g": 6.7,
+   "carb_g": 61.0,
+   "sodium_mg": 4,
+   "fiber_g": 5.3,
+   "edible_ratio": 1.0,
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "红薯",
+   "aliases": [
+    "地瓜",
+    "番薯",
+    "紫薯"
+   ],
+   "kcal": 106,
+   "protein_g": 1.4,
+   "fat_g": 0.2,
+   "carb_g": 25.2,
+   "sodium_mg": 28,
+   "fiber_g": 1.6,
+   "edible_ratio": 0.9,
+   "default_unit_g": {
+    "个": 200
+   },
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "土豆",
+   "aliases": [
+    "洋芋",
+    "芋头",
+    "芋艿",
+    "马铃薯"
+   ],
+   "kcal": 81,
+   "protein_g": 2.6,
+   "fat_g": 0.2,
+   "carb_g": 17.8,
+   "sodium_mg": 5,
+   "fiber_g": 1.1,
+   "edible_ratio": 0.94,
+   "default_unit_g": {
+    "个": 180
+   },
+   "tags": [
+    "主食",
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "玉米",
+   "aliases": [
+    "甜玉米",
+    "玉米粒",
+    "玉米棒"
+   ],
+   "kcal": 112,
+   "protein_g": 4.0,
+   "fat_g": 1.2,
+   "carb_g": 22.8,
+   "sodium_mg": 1,
+   "fiber_g": 2.9,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "根": 200
+   },
+   "tags": [
+    "主食",
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "猪五花肉",
+   "aliases": [
+    "五花肉",
+    "肥肉",
+    "带皮五花"
+   ],
+   "kcal": 395,
+   "protein_g": 14.1,
+   "fat_g": 37.0,
+   "carb_g": 0.0,
+   "sodium_mg": 45,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "猪瘦肉",
+   "aliases": [
+    "前夹肉",
+    "大排",
+    "猪扒",
+    "猪肉",
+    "猪里脊",
+    "瘦肉",
+    "肉丝",
+    "肉片",
+    "里脊",
+    "里脊肉"
+   ],
+   "kcal": 143,
+   "protein_g": 20.3,
+   "fat_g": 6.2,
+   "carb_g": 1.5,
+   "sodium_mg": 57,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "排骨",
+   "aliases": [
+    "猪排骨",
+    "肋排"
+   ],
+   "kcal": 278,
+   "protein_g": 16.7,
+   "fat_g": 23.1,
+   "carb_g": 0.7,
+   "sodium_mg": 62,
+   "fiber_g": 0,
+   "edible_ratio": 0.72,
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "猪蹄",
+   "aliases": [
+    "猪手",
+    "猪脚"
+   ],
+   "kcal": 260,
+   "protein_g": 22.6,
+   "fat_g": 18.8,
+   "carb_g": 0.0,
+   "sodium_mg": 101,
+   "fiber_g": 0,
+   "edible_ratio": 0.6,
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "猪肝",
+   "aliases": [
+    "肝"
+   ],
+   "kcal": 129,
+   "protein_g": 19.3,
+   "fat_g": 3.5,
+   "carb_g": 5.0,
+   "sodium_mg": 68,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "猪大肠",
+   "aliases": [
+    "肥肠",
+    "猪肠"
+   ],
+   "kcal": 196,
+   "protein_g": 6.9,
+   "fat_g": 18.7,
+   "carb_g": 0.0,
+   "sodium_mg": 116,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "牛腩",
+   "aliases": [
+    "牛腩肉",
+    "牛肋条"
+   ],
+   "kcal": 332,
+   "protein_g": 17.1,
+   "fat_g": 29.3,
+   "carb_g": 0.0,
+   "sodium_mg": 60,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "牛肉",
+   "aliases": [
+    "黄牛肉",
+    "牛肉片",
+    "牛里脊",
+    "肥牛"
+   ],
+   "kcal": 125,
+   "protein_g": 19.9,
+   "fat_g": 4.2,
+   "carb_g": 2.0,
+   "sodium_mg": 84,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "羊肉",
+   "aliases": [
+    "羊腩",
+    "羊肉片",
+    "羊腿肉"
+   ],
+   "kcal": 203,
+   "protein_g": 19.0,
+   "fat_g": 14.1,
+   "carb_g": 0.0,
+   "sodium_mg": 81,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "鸡肉",
+   "aliases": [
+    "三黄鸡",
+    "土鸡",
+    "文昌鸡",
+    "老母鸡",
+    "老鸡汤",
+    "鸡",
+    "鸡丁",
+    "鸡丝",
+    "鸡块",
+    "鸡块肉",
+    "鸡胸肉",
+    "鸡腿",
+    "鸡腿肉"
+   ],
+   "kcal": 167,
+   "protein_g": 19.3,
+   "fat_g": 9.4,
+   "carb_g": 1.3,
+   "sodium_mg": 63,
+   "fiber_g": 0,
+   "edible_ratio": 0.66,
+   "default_unit_g": {
+    "只": 1000
+   },
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "鸡翅",
+   "aliases": [
+    "翅中",
+    "翅尖",
+    "鸡中翅"
+   ],
+   "kcal": 194,
+   "protein_g": 17.4,
+   "fat_g": 11.8,
+   "carb_g": 4.6,
+   "sodium_mg": 85,
+   "fiber_g": 0,
+   "edible_ratio": 0.69,
+   "default_unit_g": {
+    "个": 50
+   },
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "鸡爪",
+   "aliases": [
+    "凤爪",
+    "鸡脚"
+   ],
+   "kcal": 254,
+   "protein_g": 23.9,
+   "fat_g": 16.4,
+   "carb_g": 2.7,
+   "sodium_mg": 169,
+   "fiber_g": 0,
+   "edible_ratio": 0.6,
+   "default_unit_g": {
+    "个": 30
+   },
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "鸭肉",
+   "aliases": [
+    "鸭",
+    "鸭腿",
+    "烤鸭"
+   ],
+   "kcal": 240,
+   "protein_g": 15.5,
+   "fat_g": 19.7,
+   "carb_g": 0.2,
+   "sodium_mg": 69,
+   "fiber_g": 0,
+   "edible_ratio": 0.7,
+   "tags": [
+    "荤"
+   ]
+  },
+  {
+   "name": "香肠",
+   "aliases": [
+    "腊肠",
+    "广式腊肠",
+    "香肠丁"
+   ],
+   "kcal": 508,
+   "protein_g": 24.1,
+   "fat_g": 40.7,
+   "carb_g": 11.2,
+   "sodium_mg": 2309,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "根": 60
+   },
+   "tags": [
+    "荤",
+    "加工肉"
+   ]
+  },
+  {
+   "name": "培根",
+   "aliases": [
+    "烟肉"
+   ],
+   "kcal": 181,
+   "protein_g": 22.3,
+   "fat_g": 9.0,
+   "carb_g": 2.6,
+   "sodium_mg": 763,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "荤",
+    "加工肉"
+   ]
+  },
+  {
+   "name": "火腿",
+   "aliases": [
+    "火腿肠",
+    "方腿"
+   ],
+   "kcal": 330,
+   "protein_g": 16.0,
+   "fat_g": 27.4,
+   "carb_g": 4.9,
+   "sodium_mg": 1086,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "荤",
+    "加工肉"
+   ]
+  },
+  {
+   "name": "鸡蛋",
+   "aliases": [
+    "卤蛋",
+    "土鸡蛋",
+    "茶叶蛋",
+    "蛋",
+    "蛋丝",
+    "蛋液",
+    "蛋皮",
+    "蛋花",
+    "鸡蛋液"
+   ],
+   "kcal": 144,
+   "protein_g": 13.3,
+   "fat_g": 8.8,
+   "carb_g": 2.8,
+   "sodium_mg": 131,
+   "fiber_g": 0,
+   "edible_ratio": 0.88,
+   "default_unit_g": {
+    "个": 50
+   },
+   "tags": [
+    "蛋"
+   ]
+  },
+  {
+   "name": "咸蛋",
+   "aliases": [
+    "咸鸭蛋"
+   ],
+   "kcal": 190,
+   "protein_g": 12.7,
+   "fat_g": 12.7,
+   "carb_g": 6.3,
+   "sodium_mg": 2706,
+   "fiber_g": 0,
+   "edible_ratio": 0.85,
+   "default_unit_g": {
+    "个": 60
+   },
+   "tags": [
+    "蛋"
+   ]
+  },
+  {
+   "name": "皮蛋",
+   "aliases": [
+    "松花蛋"
+   ],
+   "kcal": 171,
+   "protein_g": 14.2,
+   "fat_g": 10.7,
+   "carb_g": 4.5,
+   "sodium_mg": 542,
+   "fiber_g": 0,
+   "edible_ratio": 0.9,
+   "default_unit_g": {
+    "个": 60
+   },
+   "tags": [
+    "蛋"
+   ]
+  },
+  {
+   "name": "草鱼",
+   "aliases": [
+    "鱼",
+    "鱼片",
+    "鲩鱼",
+    "青鱼"
+   ],
+   "kcal": 113,
+   "protein_g": 16.6,
+   "fat_g": 5.2,
+   "carb_g": 0.0,
+   "sodium_mg": 46,
+   "fiber_g": 0,
+   "edible_ratio": 0.58,
+   "tags": [
+    "水产"
+   ]
+  },
+  {
+   "name": "鲈鱼",
+   "aliases": [
+    "海鲈",
+    "花鲈"
+   ],
+   "kcal": 105,
+   "protein_g": 18.6,
+   "fat_g": 3.4,
+   "carb_g": 0.0,
+   "sodium_mg": 144,
+   "fiber_g": 0,
+   "edible_ratio": 0.58,
+   "default_unit_g": {
+    "条": 500
+   },
+   "tags": [
+    "水产"
+   ]
+  },
+  {
+   "name": "虾",
+   "aliases": [
+    "鲜虾",
+    "大虾",
+    "虾仁",
+    "基围虾",
+    "白虾"
+   ],
+   "kcal": 93,
+   "protein_g": 18.6,
+   "fat_g": 0.8,
+   "carb_g": 2.8,
+   "sodium_mg": 165,
+   "fiber_g": 0,
+   "edible_ratio": 0.6,
+   "default_unit_g": {
+    "只": 15
+   },
+   "tags": [
+    "水产",
+    "甲壳类"
+   ]
+  },
+  {
+   "name": "花蛤",
+   "aliases": [
+    "蛤蜊",
+    "花甲",
+    "蚬"
+   ],
+   "kcal": 62,
+   "protein_g": 10.1,
+   "fat_g": 1.1,
+   "carb_g": 2.8,
+   "sodium_mg": 425,
+   "fiber_g": 0,
+   "edible_ratio": 0.4,
+   "tags": [
+    "水产",
+    "贝类"
+   ]
+  },
+  {
+   "name": "鱿鱼",
+   "aliases": [
+    "鲜鱿",
+    "鱿鱼须"
+   ],
+   "kcal": 84,
+   "protein_g": 17.4,
+   "fat_g": 1.6,
+   "carb_g": 0.0,
+   "sodium_mg": 134,
+   "fiber_g": 0,
+   "edible_ratio": 0.8,
+   "tags": [
+    "水产"
+   ]
+  },
+  {
+   "name": "三文鱼",
+   "aliases": [
+    "鲑鱼"
+   ],
+   "kcal": 139,
+   "protein_g": 17.2,
+   "fat_g": 7.8,
+   "carb_g": 0.0,
+   "sodium_mg": 63,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "水产"
+   ]
+  },
+  {
+   "name": "鱼丸",
+   "aliases": [
+    "鱼蛋",
+    "鱼滑",
+    "虾滑"
+   ],
+   "kcal": 107,
+   "protein_g": 12.0,
+   "fat_g": 3.5,
+   "carb_g": 6.0,
+   "sodium_mg": 480,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "个": 12
+   },
+   "tags": [
+    "水产",
+    "加工"
+   ]
+  },
+  {
+   "name": "紫菜",
+   "aliases": [
+    "海苔"
+   ],
+   "kcal": 250,
+   "protein_g": 26.7,
+   "fat_g": 1.1,
+   "carb_g": 44.1,
+   "sodium_mg": 710,
+   "fiber_g": 21.6,
+   "edible_ratio": 1.0,
+   "tags": [
+    "蔬菜",
+    "海藻"
+   ]
+  },
+  {
+   "name": "番茄",
+   "aliases": [
+    "西红柿"
+   ],
+   "kcal": 20,
+   "protein_g": 0.9,
+   "fat_g": 0.2,
+   "carb_g": 4.0,
+   "sodium_mg": 5,
+   "fiber_g": 0.5,
+   "edible_ratio": 0.97,
+   "default_unit_g": {
+    "个": 150
+   },
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "黄瓜",
+   "aliases": [
+    "青瓜"
+   ],
+   "kcal": 16,
+   "protein_g": 0.8,
+   "fat_g": 0.2,
+   "carb_g": 2.9,
+   "sodium_mg": 5,
+   "fiber_g": 0.5,
+   "edible_ratio": 0.92,
+   "default_unit_g": {
+    "根": 200
+   },
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "土豆丝",
+   "aliases": [],
+   "kcal": 81,
+   "protein_g": 2.6,
+   "fat_g": 0.2,
+   "carb_g": 17.8,
+   "sodium_mg": 5,
+   "fiber_g": 1.1,
+   "edible_ratio": 1.0,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "青椒",
+   "aliases": [
+    "螺丝椒",
+    "尖椒",
+    "彩椒",
+    "柿子椒",
+    "辣椒"
+   ],
+   "kcal": 22,
+   "protein_g": 1.0,
+   "fat_g": 0.2,
+   "carb_g": 5.4,
+   "sodium_mg": 3,
+   "fiber_g": 1.4,
+   "edible_ratio": 0.85,
+   "default_unit_g": {
+    "个": 60
+   },
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "干辣椒",
+   "aliases": [
+    "小米辣",
+    "朝天椒",
+    "辣椒干"
+   ],
+   "kcal": 298,
+   "protein_g": 15.4,
+   "fat_g": 12.0,
+   "carb_g": 57.7,
+   "sodium_mg": 30,
+   "fiber_g": 41.7,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "个": 2
+   },
+   "tags": [
+    "调料",
+    "辣"
+   ]
+  },
+  {
+   "name": "洋葱",
+   "aliases": [
+    "圆葱"
+   ],
+   "kcal": 40,
+   "protein_g": 1.1,
+   "fat_g": 0.2,
+   "carb_g": 9.0,
+   "sodium_mg": 4,
+   "fiber_g": 0.9,
+   "edible_ratio": 0.9,
+   "default_unit_g": {
+    "个": 200
+   },
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "胡萝卜",
+   "aliases": [
+    "红萝卜"
+   ],
+   "kcal": 39,
+   "protein_g": 1.0,
+   "fat_g": 0.2,
+   "carb_g": 8.8,
+   "sodium_mg": 71,
+   "fiber_g": 1.1,
+   "edible_ratio": 0.96,
+   "default_unit_g": {
+    "根": 150
+   },
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "白萝卜",
+   "aliases": [
+    "萝卜"
+   ],
+   "kcal": 21,
+   "protein_g": 0.9,
+   "fat_g": 0.1,
+   "carb_g": 5.0,
+   "sodium_mg": 62,
+   "fiber_g": 1.0,
+   "edible_ratio": 0.95,
+   "default_unit_g": {
+    "根": 400
+   },
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "白菜",
+   "aliases": [
+    "大白菜",
+    "娃娃菜",
+    "小白菜"
+   ],
+   "kcal": 17,
+   "protein_g": 1.5,
+   "fat_g": 0.1,
+   "carb_g": 3.2,
+   "sodium_mg": 57,
+   "fiber_g": 0.8,
+   "edible_ratio": 0.89,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "菜心",
+   "aliases": [
+    "芥兰",
+    "油菜",
+    "青菜",
+    "上海青"
+   ],
+   "kcal": 22,
+   "protein_g": 2.8,
+   "fat_g": 0.5,
+   "carb_g": 2.7,
+   "sodium_mg": 39,
+   "fiber_g": 1.7,
+   "edible_ratio": 0.9,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "菠菜",
+   "aliases": [
+    "菠菜叶"
+   ],
+   "kcal": 28,
+   "protein_g": 2.6,
+   "fat_g": 0.3,
+   "carb_g": 4.5,
+   "sodium_mg": 85,
+   "fiber_g": 1.7,
+   "edible_ratio": 0.89,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "生菜",
+   "aliases": [
+    "球生菜"
+   ],
+   "kcal": 15,
+   "protein_g": 1.3,
+   "fat_g": 0.3,
+   "carb_g": 2.0,
+   "sodium_mg": 33,
+   "fiber_g": 0.7,
+   "edible_ratio": 0.94,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "空心菜",
+   "aliases": [
+    "通菜",
+    "蕹菜"
+   ],
+   "kcal": 23,
+   "protein_g": 2.2,
+   "fat_g": 0.3,
+   "carb_g": 3.6,
+   "sodium_mg": 94,
+   "fiber_g": 1.4,
+   "edible_ratio": 0.85,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "西兰花",
+   "aliases": [
+    "花椰菜",
+    "青花菜"
+   ],
+   "kcal": 36,
+   "protein_g": 4.1,
+   "fat_g": 0.6,
+   "carb_g": 4.3,
+   "sodium_mg": 19,
+   "fiber_g": 1.6,
+   "edible_ratio": 0.83,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "花菜",
+   "aliases": [
+    "菜花",
+    "白花菜"
+   ],
+   "kcal": 24,
+   "protein_g": 2.1,
+   "fat_g": 0.2,
+   "carb_g": 4.6,
+   "sodium_mg": 32,
+   "fiber_g": 1.2,
+   "edible_ratio": 0.82,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "茄子",
+   "aliases": [
+    "长茄",
+    "紫茄"
+   ],
+   "kcal": 23,
+   "protein_g": 1.1,
+   "fat_g": 0.2,
+   "carb_g": 4.9,
+   "sodium_mg": 5,
+   "fiber_g": 1.3,
+   "edible_ratio": 0.93,
+   "default_unit_g": {
+    "根": 250
+   },
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "豆角",
+   "aliases": [
+    "四季豆",
+    "豇豆",
+    "长豆角"
+   ],
+   "kcal": 30,
+   "protein_g": 2.5,
+   "fat_g": 0.2,
+   "carb_g": 5.7,
+   "sodium_mg": 4,
+   "fiber_g": 1.5,
+   "edible_ratio": 0.96,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "荷兰豆",
+   "aliases": [
+    "甜豆"
+   ],
+   "kcal": 30,
+   "protein_g": 2.5,
+   "fat_g": 0.3,
+   "carb_g": 4.9,
+   "sodium_mg": 1,
+   "fiber_g": 1.4,
+   "edible_ratio": 0.88,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "西葫芦",
+   "aliases": [
+    "角瓜"
+   ],
+   "kcal": 19,
+   "protein_g": 0.8,
+   "fat_g": 0.2,
+   "carb_g": 3.8,
+   "sodium_mg": 5,
+   "fiber_g": 0.6,
+   "edible_ratio": 0.95,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "冬瓜",
+   "aliases": [],
+   "kcal": 12,
+   "protein_g": 0.4,
+   "fat_g": 0.2,
+   "carb_g": 2.6,
+   "sodium_mg": 1,
+   "fiber_g": 0.7,
+   "edible_ratio": 0.8,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "南瓜",
+   "aliases": [
+    "老南瓜"
+   ],
+   "kcal": 23,
+   "protein_g": 0.7,
+   "fat_g": 0.1,
+   "carb_g": 5.3,
+   "sodium_mg": 1,
+   "fiber_g": 0.8,
+   "edible_ratio": 0.85,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "苦瓜",
+   "aliases": [
+    "凉瓜"
+   ],
+   "kcal": 22,
+   "protein_g": 1.0,
+   "fat_g": 0.1,
+   "carb_g": 4.9,
+   "sodium_mg": 2,
+   "fiber_g": 1.4,
+   "edible_ratio": 0.81,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "莴笋",
+   "aliases": [
+    "莴苣",
+    "青笋"
+   ],
+   "kcal": 15,
+   "protein_g": 1.0,
+   "fat_g": 0.1,
+   "carb_g": 2.8,
+   "sodium_mg": 36,
+   "fiber_g": 0.6,
+   "edible_ratio": 0.62,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "莲藕",
+   "aliases": [
+    "藕"
+   ],
+   "kcal": 73,
+   "protein_g": 1.9,
+   "fat_g": 0.2,
+   "carb_g": 16.4,
+   "sodium_mg": 44,
+   "fiber_g": 1.2,
+   "edible_ratio": 0.88,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "山药",
+   "aliases": [
+    "淮山"
+   ],
+   "kcal": 57,
+   "protein_g": 1.9,
+   "fat_g": 0.2,
+   "carb_g": 12.4,
+   "sodium_mg": 18,
+   "fiber_g": 0.8,
+   "edible_ratio": 0.83,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "香菇",
+   "aliases": [
+    "冬菇",
+    "鲜香菇"
+   ],
+   "kcal": 26,
+   "protein_g": 2.2,
+   "fat_g": 0.3,
+   "carb_g": 5.2,
+   "sodium_mg": 1,
+   "fiber_g": 3.3,
+   "edible_ratio": 0.95,
+   "default_unit_g": {
+    "朵": 20
+   },
+   "tags": [
+    "蔬菜",
+    "菌菇"
+   ]
+  },
+  {
+   "name": "木耳",
+   "aliases": [
+    "玉耳",
+    "黑木耳",
+    "云耳"
+   ],
+   "kcal": 27,
+   "protein_g": 1.5,
+   "fat_g": 0.2,
+   "carb_g": 6.0,
+   "sodium_mg": 8,
+   "fiber_g": 2.6,
+   "edible_ratio": 1.0,
+   "tags": [
+    "蔬菜",
+    "菌菇"
+   ]
+  },
+  {
+   "name": "金针菇",
+   "aliases": [],
+   "kcal": 32,
+   "protein_g": 2.4,
+   "fat_g": 0.4,
+   "carb_g": 6.0,
+   "sodium_mg": 4,
+   "fiber_g": 2.7,
+   "edible_ratio": 1.0,
+   "tags": [
+    "蔬菜",
+    "菌菇"
+   ]
+  },
+  {
+   "name": "杏鲍菇",
+   "aliases": [],
+   "kcal": 35,
+   "protein_g": 1.3,
+   "fat_g": 0.1,
+   "carb_g": 8.3,
+   "sodium_mg": 3,
+   "fiber_g": 2.1,
+   "edible_ratio": 0.95,
+   "tags": [
+    "蔬菜",
+    "菌菇"
+   ]
+  },
+  {
+   "name": "菌菇",
+   "aliases": [
+    "菌菇包",
+    "杂菌",
+    "竹荪",
+    "鹿茸菇",
+    "白玉菇",
+    "虫草花"
+   ],
+   "kcal": 30,
+   "protein_g": 2.7,
+   "fat_g": 0.4,
+   "carb_g": 5.0,
+   "sodium_mg": 5,
+   "fiber_g": 2.5,
+   "edible_ratio": 1.0,
+   "tags": [
+    "蔬菜",
+    "菌菇"
+   ]
+  },
+  {
+   "name": "豆芽",
+   "aliases": [
+    "绿豆芽",
+    "黄豆芽"
+   ],
+   "kcal": 18,
+   "protein_g": 2.1,
+   "fat_g": 0.1,
+   "carb_g": 2.9,
+   "sodium_mg": 5,
+   "fiber_g": 0.8,
+   "edible_ratio": 1.0,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "豆腐",
+   "aliases": [
+    "内酯豆腐",
+    "北豆腐",
+    "南豆腐",
+    "嫩豆腐",
+    "嫩豆腐块",
+    "老豆腐"
+   ],
+   "kcal": 82,
+   "protein_g": 8.1,
+   "fat_g": 3.7,
+   "carb_g": 4.2,
+   "sodium_mg": 7,
+   "fiber_g": 0.4,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "块": 350
+   },
+   "tags": [
+    "豆制品"
+   ]
+  },
+  {
+   "name": "豆干",
+   "aliases": [
+    "香干",
+    "豆腐干",
+    "鸡蛋干"
+   ],
+   "kcal": 140,
+   "protein_g": 16.2,
+   "fat_g": 3.6,
+   "carb_g": 11.5,
+   "sodium_mg": 76,
+   "fiber_g": 0.8,
+   "edible_ratio": 1.0,
+   "tags": [
+    "豆制品"
+   ]
+  },
+  {
+   "name": "腐竹",
+   "aliases": [
+    "千张",
+    "豆腐皮"
+   ],
+   "kcal": 459,
+   "protein_g": 44.6,
+   "fat_g": 21.7,
+   "carb_g": 22.3,
+   "sodium_mg": 26,
+   "fiber_g": 1.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "豆制品"
+   ]
+  },
+  {
+   "name": "豆豉",
+   "aliases": [
+    "豆豉酱"
+   ],
+   "kcal": 244,
+   "protein_g": 24.1,
+   "fat_g": 3.5,
+   "carb_g": 36.8,
+   "sodium_mg": 2300,
+   "fiber_g": 5.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "毛豆",
+   "aliases": [
+    "青豆",
+    "豌豆"
+   ],
+   "kcal": 131,
+   "protein_g": 13.1,
+   "fat_g": 5.0,
+   "carb_g": 10.5,
+   "sodium_mg": 3,
+   "fiber_g": 4.0,
+   "edible_ratio": 0.6,
+   "tags": [
+    "蔬菜",
+    "豆类"
+   ]
+  },
+  {
+   "name": "三色杂菜",
+   "aliases": [
+    "杂菜",
+    "冷冻杂菜"
+   ],
+   "kcal": 70,
+   "protein_g": 3.5,
+   "fat_g": 0.5,
+   "carb_g": 13.0,
+   "sodium_mg": 20,
+   "fiber_g": 3.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "食用油",
+   "aliases": [
+    "大豆油",
+    "植物油",
+    "玉米油",
+    "红油",
+    "色拉油",
+    "花生油",
+    "菜籽油",
+    "葱油",
+    "藤椒油",
+    "调和油",
+    "辣油"
+   ],
+   "kcal": 899,
+   "protein_g": 0.0,
+   "fat_g": 99.9,
+   "carb_g": 0.0,
+   "sodium_mg": 0,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "汤匙": 14,
+    "茶匙": 5
+   },
+   "tags": [
+    "调料",
+    "油"
+   ]
+  },
+  {
+   "name": "猪油",
+   "aliases": [
+    "荤油"
+   ],
+   "kcal": 897,
+   "protein_g": 0.0,
+   "fat_g": 99.6,
+   "carb_g": 0.0,
+   "sodium_mg": 0,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料",
+    "油"
+   ]
+  },
+  {
+   "name": "香油",
+   "aliases": [
+    "芝麻油",
+    "麻油"
+   ],
+   "kcal": 898,
+   "protein_g": 0.0,
+   "fat_g": 99.7,
+   "carb_g": 0.2,
+   "sodium_mg": 1,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "茶匙": 5
+   },
+   "tags": [
+    "调料",
+    "油"
+   ]
+  },
+  {
+   "name": "盐",
+   "aliases": [
+    "食盐",
+    "精盐"
+   ],
+   "kcal": 0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 0.0,
+   "sodium_mg": 39311,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "茶匙": 6
+   },
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "白糖",
+   "aliases": [
+    "白砂糖",
+    "砂糖",
+    "糖",
+    "糖水",
+    "糖粉",
+    "绵白糖"
+   ],
+   "kcal": 400,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 99.9,
+   "sodium_mg": 1,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "茶匙": 4,
+    "汤匙": 12
+   },
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "冰糖",
+   "aliases": [
+    "单晶冰糖"
+   ],
+   "kcal": 397,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 99.3,
+   "sodium_mg": 2,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "生抽",
+   "aliases": [
+    "味极鲜",
+    "酱油",
+    "鲜味汁",
+    "鲜味生抽"
+   ],
+   "kcal": 63,
+   "protein_g": 5.6,
+   "fat_g": 0.1,
+   "carb_g": 10.1,
+   "sodium_mg": 5757,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "汤匙": 15,
+    "茶匙": 5
+   },
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "老抽",
+   "aliases": [
+    "红烧酱油"
+   ],
+   "kcal": 129,
+   "protein_g": 7.9,
+   "fat_g": 0.1,
+   "carb_g": 23.8,
+   "sodium_mg": 5000,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "蚝油",
+   "aliases": [
+    "蚝油汁"
+   ],
+   "kcal": 114,
+   "protein_g": 3.5,
+   "fat_g": 0.2,
+   "carb_g": 24.0,
+   "sodium_mg": 4200,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "汤匙": 15
+   },
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "醋",
+   "aliases": [
+    "陈醋",
+    "米醋",
+    "白醋",
+    "香醋"
+   ],
+   "kcal": 31,
+   "protein_g": 2.1,
+   "fat_g": 0.3,
+   "carb_g": 4.9,
+   "sodium_mg": 262,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "汤匙": 15
+   },
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "料酒",
+   "aliases": [
+    "黄酒",
+    "花雕酒",
+    "绍兴酒",
+    "米酒"
+   ],
+   "kcal": 66,
+   "protein_g": 0.4,
+   "fat_g": 0.0,
+   "carb_g": 4.0,
+   "sodium_mg": 25,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "汤匙": 15
+   },
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "淀粉",
+   "aliases": [
+    "土豆淀粉",
+    "水淀粉",
+    "玉米淀粉",
+    "生粉",
+    "红薯淀粉",
+    "芡汁"
+   ],
+   "kcal": 346,
+   "protein_g": 1.2,
+   "fat_g": 0.1,
+   "carb_g": 85.0,
+   "sodium_mg": 5,
+   "fiber_g": 0.1,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "汤匙": 9
+   },
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "豆瓣酱",
+   "aliases": [
+    "郫县豆瓣",
+    "豆瓣"
+   ],
+   "kcal": 181,
+   "protein_g": 13.6,
+   "fat_g": 6.8,
+   "carb_g": 17.1,
+   "sodium_mg": 6012,
+   "fiber_g": 1.5,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "汤匙": 18
+   },
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "甜面酱",
+   "aliases": [
+    "京酱"
+   ],
+   "kcal": 139,
+   "protein_g": 5.5,
+   "fat_g": 0.6,
+   "carb_g": 28.5,
+   "sodium_mg": 2097,
+   "fiber_g": 1.4,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "番茄酱",
+   "aliases": [
+    "番茄沙司",
+    "ketchup"
+   ],
+   "kcal": 81,
+   "protein_g": 4.9,
+   "fat_g": 0.2,
+   "carb_g": 16.9,
+   "sodium_mg": 907,
+   "fiber_g": 1.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "辣椒酱",
+   "aliases": [
+    "蒜蓉辣酱",
+    "辣椒油",
+    "老干妈"
+   ],
+   "kcal": 130,
+   "protein_g": 4.0,
+   "fat_g": 9.0,
+   "carb_g": 9.0,
+   "sodium_mg": 3500,
+   "fiber_g": 1.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料",
+    "辣"
+   ]
+  },
+  {
+   "name": "花椒",
+   "aliases": [
+    "花椒粒",
+    "麻椒"
+   ],
+   "kcal": 258,
+   "protein_g": 6.7,
+   "fat_g": 8.9,
+   "carb_g": 37.8,
+   "sodium_mg": 47,
+   "fiber_g": 28.7,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "胡椒",
+   "aliases": [
+    "白胡椒",
+    "黑胡椒",
+    "胡椒粉"
+   ],
+   "kcal": 357,
+   "protein_g": 9.6,
+   "fat_g": 2.2,
+   "carb_g": 68.0,
+   "sodium_mg": 5,
+   "fiber_g": 26.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "五香粉",
+   "aliases": [
+    "十三香",
+    "香料"
+   ],
+   "kcal": 348,
+   "protein_g": 7.0,
+   "fat_g": 5.0,
+   "carb_g": 68.0,
+   "sodium_mg": 60,
+   "fiber_g": 20.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "咖喱",
+   "aliases": [
+    "咖喱块",
+    "咖喱粉"
+   ],
+   "kcal": 415,
+   "protein_g": 12.2,
+   "fat_g": 22.0,
+   "carb_g": 44.0,
+   "sodium_mg": 120,
+   "fiber_g": 15.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "鸡精",
+   "aliases": [
+    "味精",
+    "鸡粉"
+   ],
+   "kcal": 195,
+   "protein_g": 11.0,
+   "fat_g": 0.4,
+   "carb_g": 35.0,
+   "sodium_mg": 20000,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "蒜",
+   "aliases": [
+    "蒜子",
+    "大蒜",
+    "蒜末",
+    "蒜头",
+    "蒜瓣"
+   ],
+   "kcal": 128,
+   "protein_g": 4.5,
+   "fat_g": 0.2,
+   "carb_g": 27.6,
+   "sodium_mg": 19,
+   "fiber_g": 1.1,
+   "edible_ratio": 0.85,
+   "default_unit_g": {
+    "瓣": 5
+   },
+   "tags": [
+    "调料",
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "姜",
+   "aliases": [
+    "姜片",
+    "生姜",
+    "姜丝",
+    "老姜"
+   ],
+   "kcal": 46,
+   "protein_g": 1.3,
+   "fat_g": 0.6,
+   "carb_g": 10.3,
+   "sodium_mg": 14,
+   "fiber_g": 2.7,
+   "edible_ratio": 0.9,
+   "default_unit_g": {
+    "片": 2
+   },
+   "tags": [
+    "调料",
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "葱",
+   "aliases": [
+    "小葱",
+    "香葱",
+    "葱花",
+    "大葱",
+    "京葱"
+   ],
+   "kcal": 30,
+   "protein_g": 1.7,
+   "fat_g": 0.3,
+   "carb_g": 6.5,
+   "sodium_mg": 5,
+   "fiber_g": 1.3,
+   "edible_ratio": 0.82,
+   "default_unit_g": {
+    "根": 15
+   },
+   "tags": [
+    "调料",
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "香菜",
+   "aliases": [
+    "芫荽"
+   ],
+   "kcal": 33,
+   "protein_g": 1.8,
+   "fat_g": 0.4,
+   "carb_g": 6.2,
+   "sodium_mg": 49,
+   "fiber_g": 1.2,
+   "edible_ratio": 0.85,
+   "tags": [
+    "调料",
+    "蔬菜"
+   ]
+  },
+  {
+   "name": "芝麻",
+   "aliases": [
+    "白芝麻",
+    "黑芝麻"
+   ],
+   "kcal": 559,
+   "protein_g": 19.1,
+   "fat_g": 46.1,
+   "carb_g": 24.0,
+   "sodium_mg": 32,
+   "fiber_g": 14.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料"
+   ]
+  },
+  {
+   "name": "花生",
+   "aliases": [
+    "花生米",
+    "炸花生"
+   ],
+   "kcal": 574,
+   "protein_g": 24.8,
+   "fat_g": 44.3,
+   "carb_g": 21.7,
+   "sodium_mg": 3,
+   "fiber_g": 7.7,
+   "edible_ratio": 1.0,
+   "tags": [
+    "坚果",
+    "过敏原"
+   ]
+  },
+  {
+   "name": "枸杞",
+   "aliases": [
+    "杞子"
+   ],
+   "kcal": 258,
+   "protein_g": 13.9,
+   "fat_g": 1.5,
+   "carb_g": 64.1,
+   "sodium_mg": 252,
+   "fiber_g": 16.9,
+   "edible_ratio": 1.0,
+   "tags": [
+    "调料",
+    "干货"
+   ]
+  },
+  {
+   "name": "红枣",
+   "aliases": [
+    "大枣",
+    "干枣"
+   ],
+   "kcal": 276,
+   "protein_g": 3.2,
+   "fat_g": 0.5,
+   "carb_g": 67.8,
+   "sodium_mg": 6,
+   "fiber_g": 6.2,
+   "edible_ratio": 0.88,
+   "default_unit_g": {
+    "个": 10
+   },
+   "tags": [
+    "干货"
+   ]
+  },
+  {
+   "name": "黄豆",
+   "aliases": [
+    "大豆"
+   ],
+   "kcal": 390,
+   "protein_g": 35.0,
+   "fat_g": 16.0,
+   "carb_g": 34.2,
+   "sodium_mg": 2,
+   "fiber_g": 15.5,
+   "edible_ratio": 1.0,
+   "tags": [
+    "豆类"
+   ]
+  },
+  {
+   "name": "牛奶",
+   "aliases": [
+    "全脂奶",
+    "鲜奶"
+   ],
+   "kcal": 65,
+   "protein_g": 3.3,
+   "fat_g": 3.6,
+   "carb_g": 5.0,
+   "sodium_mg": 44,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "碗": 240
+   },
+   "tags": [
+    "奶"
+   ]
+  },
+  {
+   "name": "椰浆",
+   "aliases": [
+    "椰奶",
+    "椰汁"
+   ],
+   "kcal": 230,
+   "protein_g": 2.3,
+   "fat_g": 24.0,
+   "carb_g": 3.6,
+   "sodium_mg": 15,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "奶"
+   ]
+  },
+  {
+   "name": "水",
+   "aliases": [
+    "清水",
+    "热水",
+    "温水",
+    "凉水",
+    "农夫山泉水"
+   ],
+   "kcal": 0,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 0.0,
+   "sodium_mg": 1,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "碗": 240
+   },
+   "tags": [
+    "其他"
+   ]
+  },
+  {
+   "name": "苹果",
+   "aliases": [],
+   "kcal": 53,
+   "protein_g": 0.4,
+   "fat_g": 0.2,
+   "carb_g": 13.5,
+   "sodium_mg": 1,
+   "fiber_g": 1.2,
+   "edible_ratio": 0.85,
+   "default_unit_g": {
+    "个": 200
+   },
+   "tags": [
+    "水果"
+   ]
+  },
+  {
+   "name": "柠檬",
+   "aliases": [
+    "青柠"
+   ],
+   "kcal": 37,
+   "protein_g": 1.1,
+   "fat_g": 1.2,
+   "carb_g": 6.2,
+   "sodium_mg": 1,
+   "fiber_g": 1.3,
+   "edible_ratio": 0.66,
+   "default_unit_g": {
+    "个": 100
+   },
+   "tags": [
+    "水果"
+   ]
+  },
+  {
+   "name": "芒果",
+   "aliases": [],
+   "kcal": 35,
+   "protein_g": 0.6,
+   "fat_g": 0.2,
+   "carb_g": 8.3,
+   "sodium_mg": 2,
+   "fiber_g": 1.3,
+   "edible_ratio": 0.6,
+   "default_unit_g": {
+    "个": 250
+   },
+   "tags": [
+    "水果"
+   ]
+  },
+  {
+   "name": "梨",
+   "aliases": [
+    "雪梨",
+    "鸭梨"
+   ],
+   "kcal": 51,
+   "protein_g": 0.4,
+   "fat_g": 0.2,
+   "carb_g": 13.1,
+   "sodium_mg": 2,
+   "fiber_g": 3.1,
+   "edible_ratio": 0.8,
+   "default_unit_g": {
+    "个": 200
+   },
+   "tags": [
+    "水果"
+   ]
+  },
+  {
+   "name": "银耳",
+   "aliases": [
+    "雪耳"
+   ],
+   "kcal": 200,
+   "protein_g": 10.0,
+   "fat_g": 1.4,
+   "carb_g": 67.3,
+   "sodium_mg": 82,
+   "fiber_g": 30.4,
+   "edible_ratio": 1.0,
+   "tags": [
+    "干货",
+    "菌菇"
+   ]
+  },
+  {
+   "name": "莲子",
+   "aliases": [],
+   "kcal": 344,
+   "protein_g": 17.2,
+   "fat_g": 2.0,
+   "carb_g": 64.2,
+   "sodium_mg": 5,
+   "fiber_g": 3.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "干货"
+   ]
+  },
+  {
+   "name": "粉丝",
+   "aliases": [
+    "龙口粉丝",
+    "红薯粉丝"
+   ],
+   "kcal": 338,
+   "protein_g": 0.8,
+   "fat_g": 0.2,
+   "carb_g": 83.7,
+   "sodium_mg": 9,
+   "fiber_g": 1.1,
+   "edible_ratio": 1.0,
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "糯米",
+   "aliases": [
+    "江米"
+   ],
+   "kcal": 348,
+   "protein_g": 7.3,
+   "fat_g": 1.0,
+   "carb_g": 78.3,
+   "sodium_mg": 2,
+   "fiber_g": 0.8,
+   "edible_ratio": 1.0,
+   "tags": [
+    "主食"
+   ]
+  },
+  {
+   "name": "豆沙",
+   "aliases": [
+    "红豆沙"
+   ],
+   "kcal": 240,
+   "protein_g": 4.5,
+   "fat_g": 1.0,
+   "carb_g": 55.0,
+   "sodium_mg": 30,
+   "fiber_g": 2.0,
+   "edible_ratio": 1.0,
+   "tags": [
+    "甜"
+   ]
+  },
+  {
+   "name": "蜂蜜",
+   "aliases": [],
+   "kcal": 321,
+   "protein_g": 0.4,
+   "fat_g": 1.9,
+   "carb_g": 75.6,
+   "sodium_mg": 3,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "汤匙": 21
+   },
+   "tags": [
+    "调料",
+    "甜"
+   ]
+  },
+  {
+   "name": "啤酒",
+   "aliases": [
+    "纯生啤酒"
+   ],
+   "kcal": 32,
+   "protein_g": 0.4,
+   "fat_g": 0.0,
+   "carb_g": 3.0,
+   "sodium_mg": 11,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "罐": 330
+   },
+   "tags": [
+    "饮品"
+   ]
+  },
+  {
+   "name": "可乐",
+   "aliases": [
+    "汽水",
+    "碳酸饮料"
+   ],
+   "kcal": 43,
+   "protein_g": 0.0,
+   "fat_g": 0.0,
+   "carb_g": 10.8,
+   "sodium_mg": 12,
+   "fiber_g": 0,
+   "edible_ratio": 1.0,
+   "default_unit_g": {
+    "罐": 330
+   },
+   "tags": [
+    "饮品"
+   ]
+  }
+ ]
+}

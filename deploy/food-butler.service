@@ -1,0 +1,18 @@
+[Unit]
+Description=Food Butler (FastAPI)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/food-butler
+EnvironmentFile=-/etc/food-butler.env
+ExecStart=/opt/food-butler/.venv/bin/uvicorn app:app --host 0.0.0.0 --port 8000 --workers 1
+Restart=always
+RestartSec=3
+NoNewPrivileges=yes
+PrivateTmp=yes
+
+[Install]
+WantedBy=multi-user.target

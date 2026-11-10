@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "purpose": "标定 LLM 裁判与人的一致率，kappa>=0.6 才可作为趋势指标",
+    "scale": "1=完全不合适 5=非常合适",
+    "howto": "把 human 填成 1-5 的整数；再用 python eval/calibrate.py 计算 kappa",
+    "labeled": 12,
+    "total": 12
+  },
+  "items": [
+    {
+      "id": "cal_01",
+      "case": "soft_crowd_elder",
+      "utterance": "适合老人家吃的，人均40以下",
+      "restaurant": "鲜鱼粥（泰沙路店）",
+      "type_raw": "潮汕菜",
+      "price": "35",
+      "note": "主打随意搭配的海鲜粥和潮汕小食，食材新鲜，非常鲜美，价格便宜，很值得一试，虾烙不错",
+      "criteria": "这家店是否适合带长辈去：口味清淡、环境不吵、易消化、不重辣。1=完全不合适 5=非常合适",
+      "human": 5,
+      "judge": null
+    },
+    {
+      "id": "cal_02",
+      "case": "soft_crowd_elder",
+      "utterance": "适合老人家吃的，人均40以下",
+      "restaurant": "鹭园酒家·三十九年湛江菜",
+      "type_raw": "湛江菜",
+      "price": "40-70",
+      "note": "湛江菜挺特别的，在广州也不算很常见，注意是鹭园酒家湛江菜那家而不是粤菜那家，现在有了美团套餐之后更划算了，份量很大，湛江特色菜很好吃，非常值得一试",
+      "criteria": "这家店是否适合带长辈去：口味清淡、环境不吵、易消化、不重辣。1=完全不合适 5=非常合适",
+      "human": 3,
+      "judge": null
+    },
+    {
+      "id": "cal_03",
+      "case": "soft_crowd_elder",
+      "utterance": "适合老人家吃的，人均40以下",
+      "restaurant": "宝华饭店（永庆坊店）",
+      "type_raw": "粤菜",
+      "price": "36-54",
+      "note": "店面新，出品中规中矩，美团的套餐份量大很划算",
+      "criteria": "这家店是否适合带长辈去：口味清淡、环境不吵、易消化、不重辣。1=完全不合适 5=非常合适",
+      "human": 3,
+      "judge": null
+    },
+    {
+      "id": "cal_04",
+      "case": "soft_crowd_elder",
+      "utterance": "适合老人家吃的，人均40以下",
+      "restaurant": "达扬原味炖品",
+      "type_raw": "炖汤",
+      "price": "20",
+      "note": "有两家店，分别在德政中路和文明路，能喝到各种炖汤，限量供应，早上11点去比较多得选",
+      "criteria": "这家店是否适合带长辈去：口味清淡、环境不吵、易消化、不重辣。1=完全不合适 5=非常合适",
+      "human": 4,
+      "judge": null
+    },
+    {
+      "id": "cal_05",
+      "case": "soft_date",
+      "utterance": "适合约会的地方",
+      "restaurant": "鱻粥炸物",
+      "type_raw": "晚餐/宵夜",
+      "price": "80-130",
+      "note": "人气推荐，吃各种炸的海鲜，四头鲍鱼最划算，很多华工同学去，老板人很好，跟老板说华工学生可能会随机赠送，注意营业时间晚上18:00-2:00",
+      "criteria": "这家店是否适合约会：环境安静或有氛围、适合两人、不喧闹。1=完全不合适 5=非常合适",
+      "human": 4,
+      "judge": null
+    },
+    {
+      "id": "cal_06",
+      "case": "soft_date",
+      "utterance": "适合约会的地方",
+      "restaurant": "信记海鲜饭店",
+      "type_raw": "粤菜",
+      "price": "150-200",
+      "note": "广州最便宜的米其林餐厅之一，姜葱大肉蟹和蛏子是招牌，海鲜价格不会太便宜",
+      "criteria": "这家店是否适合约会：环境安静或有氛围、适合两人、不喧闹。1=完全不合适 5=非常合适",
+      "human": 4,
+      "judge": null
+    },
+    {
+      "id": "cal_07",
+      "case": "soft_date",
+      "utterance": "适合约会的地方",
+      "restaurant": "南泉轩食府",
+      "type_raw": "粤菜",
+      "price": "120",
+      "note": "隐藏于市区边缘的饭店，现在11号线开通容易去，出品很惊艳特别，市师鸡必点",
+      "criteria": "这家店是否适合约会：环境安静或有氛围、适合两人、不喧闹。1=完全不合适 5=非常合适",
+      "human": 2,
+      "judge": null
+    },
+    {
+      "id": "cal_08",
+      "case": "soft_date",
+      "utterance": "适合约会的地方",
+      "restaurant": "炳胜品味（珠江新城店）",
+      "type_raw": "粤菜",
+      "price": "150-200",
+      "note": "比较高档的粤菜里面较便宜的一家，黑叉烧必吃，大黄鱼也招牌",
+      "criteria": "这家店是否适合约会：环境安静或有氛围、适合两人、不喧闹。1=完全不合适 5=非常合适",
+      "human": 3,
+      "judge": null
+    },
+    {
+      "id": "cal_09",
+      "case": "soft_wokhei",
+      "utterance": "有锅气的大排档",
+      "restaurant": "何叁大排档",
+      "type_raw": "海鲜",
+      "price": "100",
+      "note": "四海城新开的海鲜店，很新鲜而且菜单价格比较划算",
+      "criteria": "这家店是否属于有锅气的大排档/小炒类：现炒、火候足、烟火气。1=完全不合适 5=非常合适",
+      "human": 5,
+      "judge": null
+    },
+    {
+      "id": "cal_10",
+      "case": "soft_wokhei",
+      "utterance": "有锅气的大排档",
+      "restaurant": "津津有味",
+      "type_raw": "海鲜",
+      "price": "70",
+      "note": "一家很便宜的大排档，海鲜都很便宜实惠",
+      "criteria": "这家店是否属于有锅气的大排档/小炒类：现炒、火候足、烟火气。1=完全不合适 5=非常合适",
+      "human": 5,
+      "judge": null
+    },
+    {
+      "id": "cal_11",
+      "case": "soft_wokhei",
+      "utterance": "有锅气的大排档",
+      "restaurant": "常来小聚/常来大排档",
+      "type_raw": "粤菜",
+      "price": "50-70",
+      "note": "市区平价之选，单品不贵，套餐更实惠",
+      "criteria": "这家店是否属于有锅气的大排档/小炒类：现炒、火候足、烟火气。1=完全不合适 5=非常合适",
+      "human": 3,
+      "judge": null
+    },
+    {
+      "id": "cal_12",
+      "case": "soft_wokhei",
+      "utterance": "有锅气的大排档",
+      "restaurant": "其记大排档",
+      "type_raw": "农家乐",
+      "price": "100",
+      "note": "专吃番禺附近珠江口咸淡水交界处特产，麻虾禾虫等",
+      "criteria": "这家店是否属于有锅气的大排档/小炒类：现炒、火候足、烟火气。1=完全不合适 5=非常合适",
+      "human": 5,
+      "judge": null
+    }
+  ]
+}

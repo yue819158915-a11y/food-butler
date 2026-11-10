@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: food-butler
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: LLM_KEY          # 在 Render 控制台填，不要写进仓库
+        sync: false
+      - key: LLM_MODEL
+        value: glm-4-flash
+      - key: TZ
+        value: Asia/Shanghai

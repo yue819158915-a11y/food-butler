@@ -1,0 +1,395 @@
+{
+  "created": "2026-11-05 23:31:54",
+  "summary": {
+    "strict_returned": 131,
+    "strict_violations": 17,
+    "strict_rate": 0.1297709923664122,
+    "overall_returned": 331,
+    "overall_violations": 217,
+    "overall_rate": 0.6555891238670695,
+    "behavior_pass": 0,
+    "behavior_total": 4,
+    "soft_mean": null,
+    "relaxed_cases": 5
+  },
+  "cases": [
+    {
+      "id": "price_cap_40",
+      "direction": "人均上限",
+      "returned": 23,
+      "violations": 2,
+      "rate": 0.08695652173913043,
+      "relaxed": false,
+      "has_must": true,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [
+        [
+          "鹭园酒家·三十九年湛江菜",
+          "40-70",
+          "price_mid <= 40",
+          ""
+        ],
+        [
+          "宝华饭店（永庆坊店）",
+          "36-54",
+          "price_mid <= 40",
+          ""
+        ]
+      ],
+      "behavior": "-"
+    },
+    {
+      "id": "price_cap_30",
+      "direction": "人均上限",
+      "returned": 17,
+      "violations": 3,
+      "rate": 0.17647058823529413,
+      "relaxed": false,
+      "has_must": true,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [
+        [
+          "阿甘鲍汁专门店",
+          "20-50",
+          "price_mid <= 30",
+          ""
+        ],
+        [
+          "凤城小馆",
+          "30-50",
+          "price_mid <= 30",
+          ""
+        ],
+        [
+          "竹园竹升面（西关总店）",
+          "20-48",
+          "price_mid <= 30",
+          ""
+        ]
+      ],
+      "behavior": "-"
+    },
+    {
+      "id": "price_floor_150",
+      "direction": "人均下限",
+      "returned": 13,
+      "violations": 3,
+      "rate": 0.23076923076923078,
+      "relaxed": false,
+      "has_must": true,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [
+        [
+          "南海渔村（珠江新城店）",
+          "130-150",
+          "price_mid >= 150",
+          ""
+        ],
+        [
+          "寿司郎",
+          "80-150",
+          "price_mid >= 150",
+          ""
+        ],
+        [
+          "友食肉铺",
+          "130-160",
+          "price_mid >= 150",
+          ""
+        ]
+      ],
+      "behavior": "-"
+    },
+    {
+      "id": "price_band_80_150",
+      "direction": "人均区间",
+      "returned": 66,
+      "violations": 7,
+      "rate": 0.10606060606060606,
+      "relaxed": false,
+      "has_must": true,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [
+        [
+          "信记海鲜饭店",
+          "150-200",
+          "80 <= price_mid <= 150",
+          ""
+        ],
+        [
+          "炳胜品味（珠江新城店）",
+          "150-200",
+          "80 <= price_mid <= 150",
+          ""
+        ],
+        [
+          "九大簋家宴",
+          "55-80",
+          "80 <= price_mid <= 150",
+          ""
+        ],
+        [
+          "翠华餐厅",
+          "60-80",
+          "80 <= price_mid <= 150",
+          ""
+        ],
+        [
+          "山海烧MYSTIC BEAST DINING",
+          "150-238",
+          "80 <= price_mid <= 150",
+          ""
+        ]
+      ],
+      "behavior": "-"
+    },
+    {
+      "id": "cat_seafood_cheap",
+      "direction": "类目+价格",
+      "returned": 100,
+      "violations": 100,
+      "rate": 1.0,
+      "relaxed": true,
+      "has_must": true,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [
+        [
+          "鱻粥炸物",
+          "80-130",
+          "category == '海鲜'",
+          ""
+        ],
+        [
+          "信记海鲜饭店",
+          "150-200",
+          "category == '海鲜'",
+          ""
+        ],
+        [
+          "八合里牛肉火锅",
+          "90",
+          "category == '海鲜'",
+          ""
+        ],
+        [
+          "南泉轩食府",
+          "120",
+          "category == '海鲜'",
+          ""
+        ],
+        [
+          "炳胜品味（珠江新城店）",
+          "150-200",
+          "category == '海鲜'",
+          ""
+        ]
+      ],
+      "behavior": "-"
+    },
+    {
+      "id": "cat_yue_cap40",
+      "direction": "类目+价格",
+      "returned": 5,
+      "violations": 2,
+      "rate": 0.4,
+      "relaxed": false,
+      "has_must": true,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [
+        [
+          "鹭园酒家·三十九年湛江菜",
+          "40-70",
+          "price_mid <= 40",
+          ""
+        ],
+        [
+          "宝华饭店（永庆坊店）",
+          "36-54",
+          "price_mid <= 40",
+          ""
+        ]
+      ],
+      "behavior": "-"
+    },
+    {
+      "id": "cat_hotpot_cap80",
+      "direction": "类目+价格",
+      "returned": 1,
+      "violations": 0,
+      "rate": 0.0,
+      "relaxed": false,
+      "has_must": true,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [],
+      "behavior": "-"
+    },
+    {
+      "id": "cat_zaocha_cap40",
+      "direction": "类目+价格",
+      "returned": 100,
+      "violations": 100,
+      "rate": 1.0,
+      "relaxed": true,
+      "has_must": true,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [
+        [
+          "鱻粥炸物",
+          "80-130",
+          "category == '早茶'",
+          ""
+        ],
+        [
+          "信记海鲜饭店",
+          "150-200",
+          "category == '早茶'",
+          ""
+        ],
+        [
+          "八合里牛肉火锅",
+          "90",
+          "category == '早茶'",
+          ""
+        ],
+        [
+          "南泉轩食府",
+          "120",
+          "category == '早茶'",
+          ""
+        ],
+        [
+          "炳胜品味（珠江新城店）",
+          "150-200",
+          "category == '早茶'",
+          ""
+        ]
+      ],
+      "behavior": "-"
+    },
+    {
+      "id": "cat_dessert_xihua",
+      "direction": "类目+地点",
+      "returned": 3,
+      "violations": 0,
+      "rate": 0.0,
+      "relaxed": false,
+      "has_must": true,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [],
+      "behavior": "-"
+    },
+    {
+      "id": "loc_zhujiang",
+      "direction": "地点",
+      "returned": 3,
+      "violations": 0,
+      "rate": 0.0,
+      "relaxed": false,
+      "has_must": true,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [],
+      "behavior": "-"
+    },
+    {
+      "id": "kw_seafood_triple",
+      "direction": "口味叠加",
+      "returned": 2,
+      "violations": 0,
+      "rate": null,
+      "relaxed": false,
+      "has_must": false,
+      "expect_zero": false,
+      "expect_min": 3,
+      "reasons": [],
+      "behavior": "FAIL"
+    },
+    {
+      "id": "impossible_riliao_5",
+      "direction": "无解兜底",
+      "returned": 100,
+      "violations": 0,
+      "rate": null,
+      "relaxed": true,
+      "has_must": false,
+      "expect_zero": true,
+      "expect_min": null,
+      "reasons": [],
+      "behavior": "FAIL"
+    },
+    {
+      "id": "impossible_zaocha_10",
+      "direction": "无解兜底",
+      "returned": 100,
+      "violations": 0,
+      "rate": null,
+      "relaxed": true,
+      "has_must": false,
+      "expect_zero": true,
+      "expect_min": null,
+      "reasons": [],
+      "behavior": "FAIL"
+    },
+    {
+      "id": "crowd_elder_kw",
+      "direction": "人群适配",
+      "returned": 0,
+      "violations": 0,
+      "rate": null,
+      "relaxed": true,
+      "has_must": false,
+      "expect_zero": false,
+      "expect_min": 1,
+      "reasons": [],
+      "behavior": "FAIL"
+    },
+    {
+      "id": "soft_crowd_elder",
+      "direction": "人群适配",
+      "returned": 5,
+      "violations": 0,
+      "rate": null,
+      "relaxed": false,
+      "has_must": false,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [],
+      "behavior": "-"
+    },
+    {
+      "id": "soft_date",
+      "direction": "场景",
+      "returned": 50,
+      "violations": 0,
+      "rate": null,
+      "relaxed": false,
+      "has_must": false,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [],
+      "behavior": "-"
+    },
+    {
+      "id": "soft_wokhei",
+      "direction": "口味",
+      "returned": 5,
+      "violations": 0,
+      "rate": null,
+      "relaxed": false,
+      "has_must": false,
+      "expect_zero": false,
+      "expect_min": null,
+      "reasons": [],
+      "behavior": "-"
+    }
+  ]
+}
