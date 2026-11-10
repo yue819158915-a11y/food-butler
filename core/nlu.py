@@ -202,6 +202,32 @@ COOK_HINTS = re.compile(
     r"过敏|忌口|不吃|清淡|低卡|快手菜|家常菜|半成品|"
     r"换一批|换一道|换个菜|换个口味|换换口味|别的菜|其他的菜|其他菜|还有别的|再来一道|还有吗)")
 
+# 强信号：出现即判定为"做饭"
+COOK_STRONG = re.compile(
+    r"(做法|菜谱|食谱|怎么做|怎么烧|煮|炒|蒸|炖|烤|炸|凉拌|焖|煲|做饭|做菜|做一|做点|"
+    r"热量|卡路里|大卡|kcal|营养|减脂|增肌|控糖|高蛋白|低碳|几人份|几个人吃|带饭|便当|快手菜)")
+# 弱信号：单独出现不足以判定（要配合人数/时间，且没有明显的"找店"特征）
+COOK_SOFT = re.compile(
+    r"(清淡|忌口|过敏|不吃|低卡|家常菜|换一批|换一道|换个菜|换个口味|换换口味|"
+    r"别的菜|其他的菜|其他菜|还有别的|再来一道|还有吗)")
+# 找店特征
+EAT_HINT = re.compile(r"(人均|元以内|块钱|块以内|店|餐厅|馆子|哪家|推荐几|附近|外卖|喝茶|饮茶|早茶|宵夜吃)")
+
+
+def is_cook_intent(msg):
+    """分层判定：强信号直接做菜；弱信号要有人数/时间且不带找店特征。"""
+    if COOK_STRONG.search(msg):
+        return True
+    if COOK_SOFT.search(msg):
+        if EAT_HINT.search(msg) and re.search(r"(人均|元以内|块钱)", msg):
+            return False
+        if re.search(r"(\d+\s*分钟|\d+\s*个?人|两|二|三|四|五|六)\s*人", msg) or "一个人" in msg or "两个人" in msg:
+            return True
+        if not EAT_HINT.search(msg):
+            return True
+    return False
+
+
 COOK_PROMPT = """你是家庭烹饪需求解析器。把用户的话解析为 JSON 约束。
 
 字段说明：

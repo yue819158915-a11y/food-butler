@@ -97,7 +97,31 @@
   "source": "import",
   "source_ref": "主食/Q 弹虾滑馄饨.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 110.1,
+    "protein_g": 6.4,
+    "fat_g": 5.1,
+    "carb_g": 9.0,
+    "sodium_mg": 3983.4,
+    "fiber_g": 0.2
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 110.1,
+  "protein_g": 6.4,
+  "health": {
+   "grade": "B",
+   "score": 63,
+   "factors": [
+    "钠偏高（3983mg/份）",
+    "脂肪供能占 42%",
+    "蛋白质偏少",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r002",
@@ -235,7 +259,29 @@
   "source": "import",
   "source_ref": "主食/五彩鸡丝拌面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 357.9,
+    "protein_g": 9.7,
+    "fat_g": 18.6,
+    "carb_g": 37.9,
+    "sodium_mg": 1853.3,
+    "fiber_g": 1.4
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 357.9,
+  "protein_g": 9.7,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "钠偏高（1853mg/份）",
+    "脂肪供能占 47%"
+   ]
+  }
  },
  {
   "id": "r003",
@@ -404,7 +450,32 @@
   "source": "import",
   "source_ref": "主食/大大大块牛腩面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 725.7,
+    "protein_g": 24.3,
+    "fat_g": 52.1,
+    "carb_g": 41.0,
+    "sodium_mg": 1412.0,
+    "fiber_g": 2.1
+   },
+   "missing": [
+    "骨汤调味料"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 725.7,
+  "protein_g": 24.3,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠略高（1412mg/份）",
+    "脂肪供能占 65%",
+    "单份热量偏高（726kcal）"
+   ]
+  }
  },
  {
   "id": "r004",
@@ -532,7 +603,32 @@
   "source": "import",
   "source_ref": "主食/大排面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 494.4,
+    "protein_g": 37.4,
+    "fat_g": 25.6,
+    "carb_g": 31.0,
+    "sodium_mg": 4737.0,
+    "fiber_g": 3.2
+   },
+   "missing": [
+    "卤料",
+    "卤油"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 494.4,
+  "protein_g": 37.4,
+  "health": {
+   "grade": "A",
+   "score": 81,
+   "factors": [
+    "钠偏高（4737mg/份）",
+    "脂肪供能占 47%"
+   ]
+  }
  },
  {
   "id": "r005",
@@ -734,7 +830,29 @@
   "source": "import",
   "source_ref": "主食/大盘肥肠鸡手工面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 806.7,
+    "protein_g": 30.5,
+    "fat_g": 61.6,
+    "carb_g": 32.8,
+    "sodium_mg": 481.4,
+    "fiber_g": 1.8
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 806.7,
+  "protein_g": 30.5,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "脂肪供能占 69%",
+    "单份热量偏高（807kcal）"
+   ]
+  }
  },
  {
   "id": "r006",
@@ -799,7 +917,28 @@
   "source": "import",
   "source_ref": "主食/姬松茸菌子鸡汤面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 466.6,
+    "protein_g": 29.6,
+    "fat_g": 12.2,
+    "carb_g": 61.6,
+    "sodium_mg": 428.6,
+    "fiber_g": 4.9
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 466.6,
+  "protein_g": 29.6,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r007",
@@ -877,7 +1016,28 @@
   "source": "import",
   "source_ref": "主食/杂粮饭.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 942.6,
+    "protein_g": 22.0,
+    "fat_g": 10.3,
+    "carb_g": 191.4,
+    "sodium_mg": 373.1,
+    "fiber_g": 5.3
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 942.6,
+  "protein_g": 22.0,
+  "health": {
+   "grade": "A",
+   "score": 88,
+   "factors": [
+    "单份热量偏高（943kcal）"
+   ]
+  }
  },
  {
   "id": "r008",
@@ -1035,7 +1195,30 @@
   "source": "import",
   "source_ref": "主食/泡椒鸡杂面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 734.3,
+    "protein_g": 43.0,
+    "fat_g": 41.4,
+    "carb_g": 47.4,
+    "sodium_mg": 2127.0,
+    "fiber_g": 4.5
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 734.3,
+  "protein_g": 43.0,
+  "health": {
+   "grade": "B",
+   "score": 69,
+   "factors": [
+    "钠偏高（2127mg/份）",
+    "脂肪供能占 51%",
+    "单份热量偏高（734kcal）"
+   ]
+  }
  },
  {
   "id": "r009",
@@ -1126,7 +1309,30 @@
   "source": "import",
   "source_ref": "主食/浓香整块鸡汤面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 401.0,
+    "protein_g": 30.8,
+    "fat_g": 20.8,
+    "carb_g": 23.5,
+    "sodium_mg": 603.5,
+    "fiber_g": 1.0
+   },
+   "missing": [
+    "汤料"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 401.0,
+  "protein_g": 30.8,
+  "health": {
+   "grade": "A",
+   "score": 89,
+   "factors": [
+    "脂肪供能占 47%"
+   ]
+  }
  },
  {
   "id": "r010",
@@ -1217,7 +1423,30 @@
   "source": "import",
   "source_ref": "主食/炸鸡腿时蔬面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 517.9,
+    "protein_g": 25.0,
+    "fat_g": 10.1,
+    "carb_g": 84.6,
+    "sodium_mg": 438.7,
+    "fiber_g": 5.7
+   },
+   "missing": [
+    "起酥油"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 517.9,
+  "protein_g": 25.0,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r011",
@@ -1285,7 +1514,29 @@
   "source": "import",
   "source_ref": "主食/特色鸡汤馄饨.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 100.6,
+    "protein_g": 7.2,
+    "fat_g": 2.9,
+    "carb_g": 11.4,
+    "sodium_mg": 39.8,
+    "fiber_g": 0.4
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 100.6,
+  "protein_g": 7.2,
+  "health": {
+   "grade": "A",
+   "score": 82,
+   "factors": [
+    "蛋白质偏少",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r012",
@@ -1385,7 +1636,28 @@
   "source": "import",
   "source_ref": "主食/番茄鸡蛋面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 250.6,
+    "protein_g": 12.0,
+    "fat_g": 14.2,
+    "carb_g": 19.1,
+    "sodium_mg": 768.3,
+    "fiber_g": 1.2
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 250.6,
+  "protein_g": 12.0,
+  "health": {
+   "grade": "A",
+   "score": 83,
+   "factors": [
+    "脂肪供能占 51%"
+   ]
+  }
  },
  {
   "id": "r013",
@@ -1461,7 +1733,29 @@
   "source": "import",
   "source_ref": "主食/砂锅荠菜鲜肉馄饨.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 383.1,
+    "protein_g": 36.4,
+    "fat_g": 23.6,
+    "carb_g": 7.1,
+    "sodium_mg": 438.5,
+    "fiber_g": 0.6
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 383.1,
+  "protein_g": 36.4,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 55%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r014",
@@ -1597,7 +1891,28 @@
   "source": "import",
   "source_ref": "主食/笋子鸡丁盖饭（包菜版）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 601.5,
+    "protein_g": 26.5,
+    "fat_g": 21.4,
+    "carb_g": 74.3,
+    "sodium_mg": 3407.4,
+    "fiber_g": 5.3
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 601.5,
+  "protein_g": 26.5,
+  "health": {
+   "grade": "A",
+   "score": 88,
+   "factors": [
+    "钠偏高（3407mg/份）"
+   ]
+  }
  },
  {
   "id": "r015",
@@ -1664,7 +1979,28 @@
   "source": "import",
   "source_ref": "主食/素面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 211.6,
+    "protein_g": 4.7,
+    "fat_g": 8.4,
+    "carb_g": 29.2,
+    "sodium_mg": 431.5,
+    "fiber_g": 1.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 211.6,
+  "protein_g": 4.7,
+  "health": {
+   "grade": "A",
+   "score": 86,
+   "factors": [
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r016",
@@ -1721,7 +2057,28 @@
   "source": "import",
   "source_ref": "主食/紫薯杂粮饭.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 502.9,
+    "protein_g": 10.7,
+    "fat_g": 7.1,
+    "carb_g": 99.2,
+    "sodium_mg": 9.5,
+    "fiber_g": 2.5
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 502.9,
+  "protein_g": 10.7,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r017",
@@ -1778,7 +2135,29 @@
   "source": "import",
   "source_ref": "主食/红米糙米红薯饭.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 243.1,
+    "protein_g": 5.1,
+    "fat_g": 3.3,
+    "carb_g": 48.4,
+    "sodium_mg": 4.2,
+    "fiber_g": 0.9
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 243.1,
+  "protein_g": 5.1,
+  "health": {
+   "grade": "A",
+   "score": 82,
+   "factors": [
+    "蛋白质偏少",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r018",
@@ -1863,7 +2242,29 @@
   "source": "import",
   "source_ref": "主食/老母鸡汤面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 1043.4,
+    "protein_g": 96.4,
+    "fat_g": 46.3,
+    "carb_g": 61.0,
+    "sodium_mg": 674.0,
+    "fiber_g": 2.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 1043.4,
+  "protein_g": 96.4,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "蛋白质偏多",
+    "单份热量偏高（1043kcal）"
+   ]
+  }
  },
  {
   "id": "r019",
@@ -1958,7 +2359,28 @@
   "source": "import",
   "source_ref": "主食/老鸡扬米面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 469.2,
+    "protein_g": 37.5,
+    "fat_g": 16.6,
+    "carb_g": 44.0,
+    "sodium_mg": 402.6,
+    "fiber_g": 3.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 469.2,
+  "protein_g": 37.5,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r020",
@@ -2041,7 +2463,28 @@
   "source": "import",
   "source_ref": "主食/肥西老母鸡汤面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 207.9,
+    "protein_g": 19.9,
+    "fat_g": 9.2,
+    "carb_g": 11.5,
+    "sodium_mg": 132.4,
+    "fiber_g": 0.5
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 207.9,
+  "protein_g": 19.9,
+  "health": {
+   "grade": "A",
+   "score": 92,
+   "factors": [
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r021",
@@ -2155,7 +2598,32 @@
   "source": "import",
   "source_ref": "主食/西红柿炒鸡蛋盖饭.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 568.6,
+    "protein_g": 23.7,
+    "fat_g": 24.9,
+    "carb_g": 64.9,
+    "sodium_mg": 1177.4,
+    "fiber_g": 2.3
+   },
+   "missing": [
+    "琵琶腿",
+    "卤料",
+    "卤油"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 568.6,
+  "protein_g": 23.7,
+  "health": {
+   "grade": "A",
+   "score": 90,
+   "factors": [
+    "钠略高（1177mg/份）"
+   ]
+  }
  },
  {
   "id": "r022",
@@ -2256,7 +2724,28 @@
   "source": "import",
   "source_ref": "主食/阳春面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 294.1,
+    "protein_g": 8.5,
+    "fat_g": 8.6,
+    "carb_g": 44.6,
+    "sodium_mg": 11550.6,
+    "fiber_g": 2.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 294.1,
+  "protein_g": 8.5,
+  "health": {
+   "grade": "A",
+   "score": 84,
+   "factors": [
+    "钠偏高（11551mg/份）"
+   ]
+  }
  },
  {
   "id": "r023",
@@ -2356,7 +2845,31 @@
   "source": "import",
   "source_ref": "主食/雪菜肉丝面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 767.4,
+    "protein_g": 56.0,
+    "fat_g": 31.1,
+    "carb_g": 67.9,
+    "sodium_mg": 765.5,
+    "fiber_g": 3.3
+   },
+   "missing": [
+    "骨汤调味料"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 767.4,
+  "protein_g": 56.0,
+  "health": {
+   "grade": "A",
+   "score": 89,
+   "factors": [
+    "蛋白质偏多",
+    "单份热量偏高（767kcal）"
+   ]
+  }
  },
  {
   "id": "r024",
@@ -2460,7 +2973,28 @@
   "source": "import",
   "source_ref": "主食/香菇鸡汤面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 476.8,
+    "protein_g": 36.6,
+    "fat_g": 22.2,
+    "carb_g": 33.2,
+    "sodium_mg": 607.3,
+    "fiber_g": 1.3
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 476.8,
+  "protein_g": 36.6,
+  "health": {
+   "grade": "A",
+   "score": 89,
+   "factors": [
+    "脂肪供能占 42%"
+   ]
+  }
  },
  {
   "id": "r025",
@@ -2565,7 +3099,28 @@
   "source": "import",
   "source_ref": "主食/香辣牛肉面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 537.8,
+    "protein_g": 48.4,
+    "fat_g": 13.6,
+    "carb_g": 57.4,
+    "sodium_mg": 570.4,
+    "fiber_g": 3.6
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 537.8,
+  "protein_g": 48.4,
+  "health": {
+   "grade": "A",
+   "score": 95,
+   "factors": [
+    "蛋白质偏多"
+   ]
+  }
  },
  {
   "id": "r026",
@@ -2636,7 +3191,29 @@
   "source": "import",
   "source_ref": "主食/香辣牛腩面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 287.0,
+    "protein_g": 9.7,
+    "fat_g": 20.7,
+    "carb_g": 15.5,
+    "sodium_mg": 126.1,
+    "fiber_g": 0.7
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 287.0,
+  "protein_g": 9.7,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 65%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r027",
@@ -2771,7 +3348,28 @@
   "source": "import",
   "source_ref": "主食/香辣鸡丁拌面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 551.7,
+    "protein_g": 30.7,
+    "fat_g": 27.5,
+    "carb_g": 45.6,
+    "sodium_mg": 487.8,
+    "fiber_g": 7.8
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 551.7,
+  "protein_g": 30.7,
+  "health": {
+   "grade": "A",
+   "score": 93,
+   "factors": [
+    "脂肪供能占 45%"
+   ]
+  }
  },
  {
   "id": "r028",
@@ -2885,7 +3483,30 @@
   "source": "import",
   "source_ref": "主食/鱼香肉丝盖饭（包菜版）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 745.0,
+    "protein_g": 48.7,
+    "fat_g": 25.6,
+    "carb_g": 80.4,
+    "sodium_mg": 3608.7,
+    "fiber_g": 5.4
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 745.0,
+  "protein_g": 48.7,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "钠偏高（3609mg/份）",
+    "蛋白质偏多",
+    "单份热量偏高（745kcal）"
+   ]
+  }
  },
  {
   "id": "r029",
@@ -2985,7 +3606,33 @@
   "source": "import",
   "source_ref": "主食/鸡杂手擀面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 753.6,
+    "protein_g": 55.9,
+    "fat_g": 40.0,
+    "carb_g": 44.0,
+    "sodium_mg": 3079.1,
+    "fiber_g": 1.2
+   },
+   "missing": [
+    "调味料"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 753.6,
+  "protein_g": 55.9,
+  "health": {
+   "grade": "B",
+   "score": 66,
+   "factors": [
+    "钠偏高（3079mg/份）",
+    "脂肪供能占 48%",
+    "蛋白质偏多",
+    "单份热量偏高（754kcal）"
+   ]
+  }
  },
  {
   "id": "r030",
@@ -3075,7 +3722,30 @@
   "source": "import",
   "source_ref": "凉拌/口水鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 303.5,
+    "protein_g": 10.5,
+    "fat_g": 20.1,
+    "carb_g": 21.9,
+    "sodium_mg": 804.6,
+    "fiber_g": 2.6
+   },
+   "missing": [
+    "岭南黄"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 303.5,
+  "protein_g": 10.5,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "脂肪供能占 60%"
+   ]
+  }
  },
  {
   "id": "r031",
@@ -3132,7 +3802,32 @@
   "source": "import",
   "source_ref": "卤菜/卤大排.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 253.7,
+    "protein_g": 24.9,
+    "fat_g": 11.4,
+    "carb_g": 13.8,
+    "sodium_mg": 384.5,
+    "fiber_g": 0.8
+   },
+   "missing": [
+    "卤料",
+    "卤油"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 253.7,
+  "protein_g": 24.9,
+  "health": {
+   "grade": "A",
+   "score": 85,
+   "factors": [
+    "脂肪供能占 40%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r032",
@@ -3190,7 +3885,32 @@
   "source": "import",
   "source_ref": "卤菜/卤方干.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 274.9,
+    "protein_g": 14.7,
+    "fat_g": 12.8,
+    "carb_g": 27.5,
+    "sodium_mg": 733.2,
+    "fiber_g": 1.8
+   },
+   "missing": [
+    "卤料",
+    "卤油",
+    "方干"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 274.9,
+  "protein_g": 14.7,
+  "health": {
+   "grade": "A",
+   "score": 89,
+   "factors": [
+    "脂肪供能占 42%"
+   ]
+  }
  },
  {
   "id": "r033",
@@ -3252,7 +3972,32 @@
   "source": "import",
   "source_ref": "卤菜/卤翅根.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 245.4,
+    "protein_g": 17.5,
+    "fat_g": 13.2,
+    "carb_g": 15.4,
+    "sodium_mg": 386.0,
+    "fiber_g": 0.8
+   },
+   "missing": [
+    "卤料",
+    "卤油"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 245.4,
+  "protein_g": 17.5,
+  "health": {
+   "grade": "A",
+   "score": 85,
+   "factors": [
+    "脂肪供能占 48%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r034",
@@ -3308,7 +4053,32 @@
   "source": "import",
   "source_ref": "卤菜/卤肉肠.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 304.9,
+    "protein_g": 20.2,
+    "fat_g": 18.4,
+    "carb_g": 16.1,
+    "sodium_mg": 693.2,
+    "fiber_g": 0.8
+   },
+   "missing": [
+    "卤料",
+    "卤油"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 304.9,
+  "protein_g": 20.2,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 54%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r035",
@@ -3365,7 +4135,32 @@
   "source": "import",
   "source_ref": "卤菜/卤鸡爪.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 262.1,
+    "protein_g": 19.6,
+    "fat_g": 14.7,
+    "carb_g": 14.0,
+    "sodium_mg": 424.5,
+    "fiber_g": 0.8
+   },
+   "missing": [
+    "卤料",
+    "卤油"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 262.1,
+  "protein_g": 19.6,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 50%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r036",
@@ -3422,7 +4217,32 @@
   "source": "import",
   "source_ref": "卤菜/卤鸡腿.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 224.1,
+    "protein_g": 18.1,
+    "fat_g": 11.4,
+    "carb_g": 13.3,
+    "sodium_mg": 370.6,
+    "fiber_g": 0.8
+   },
+   "missing": [
+    "卤料",
+    "卤油"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 224.1,
+  "protein_g": 18.1,
+  "health": {
+   "grade": "A",
+   "score": 85,
+   "factors": [
+    "脂肪供能占 46%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r037",
@@ -3506,7 +4326,31 @@
   "source": "import",
   "source_ref": "炸品/嗨嗨桶（炸物桶）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 482.3,
+    "protein_g": 42.3,
+    "fat_g": 26.8,
+    "carb_g": 18.6,
+    "sodium_mg": 511.2,
+    "fiber_g": 0.5
+   },
+   "missing": [
+    "起酥油"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 482.3,
+  "protein_g": 42.3,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 50%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r038",
@@ -3563,7 +4407,33 @@
   "source": "import",
   "source_ref": "卤菜/海带结.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 537.0,
+    "protein_g": 28.6,
+    "fat_g": 25.1,
+    "carb_g": 53.7,
+    "sodium_mg": 1432.0,
+    "fiber_g": 3.6
+   },
+   "missing": [
+    "海带扣",
+    "卤料",
+    "卤油"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 537.0,
+  "protein_g": 28.6,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "钠略高（1432mg/份）",
+    "脂肪供能占 42%"
+   ]
+  }
  },
  {
   "id": "r039",
@@ -3626,7 +4496,32 @@
   "source": "import",
   "source_ref": "卤菜/薄皮青椒.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 409.4,
+    "protein_g": 21.7,
+    "fat_g": 18.3,
+    "carb_g": 44.2,
+    "sodium_mg": 1035.1,
+    "fiber_g": 4.0
+   },
+   "missing": [
+    "卤料",
+    "卤油"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 409.4,
+  "protein_g": 21.7,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "钠略高（1035mg/份）",
+    "脂肪供能占 40%"
+   ]
+  }
  },
  {
   "id": "r040",
@@ -3703,7 +4598,30 @@
   "source": "import",
   "source_ref": "早餐/包子.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 760.3,
+    "protein_g": 55.1,
+    "fat_g": 31.9,
+    "carb_g": 65.9,
+    "sodium_mg": 1197.7,
+    "fiber_g": 3.6
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 760.3,
+  "protein_g": 55.1,
+  "health": {
+   "grade": "A",
+   "score": 83,
+   "factors": [
+    "钠略高（1198mg/份）",
+    "蛋白质偏多",
+    "单份热量偏高（760kcal）"
+   ]
+  }
  },
  {
   "id": "r041",
@@ -3780,7 +4698,28 @@
   "source": "import",
   "source_ref": "早餐/现熬豆粥.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 617.7,
+    "protein_g": 16.2,
+    "fat_g": 4.2,
+    "carb_g": 129.4,
+    "sodium_mg": 510.3,
+    "fiber_g": 5.3
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 617.7,
+  "protein_g": 16.2,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r042",
@@ -3914,7 +4853,29 @@
   "source": "import",
   "source_ref": "早餐/皮蛋瘦肉粥.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 718.3,
+    "protein_g": 38.2,
+    "fat_g": 14.4,
+    "carb_g": 110.0,
+    "sodium_mg": 3051.9,
+    "fiber_g": 2.1
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 718.3,
+  "protein_g": 38.2,
+  "health": {
+   "grade": "B",
+   "score": 78,
+   "factors": [
+    "钠偏高（3052mg/份）",
+    "单份热量偏高（718kcal）"
+   ]
+  }
  },
  {
   "id": "r043",
@@ -4017,7 +4978,29 @@
   "source": "import",
   "source_ref": "早餐/蔬菜鸡蛋卷饼.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 759.8,
+    "protein_g": 20.3,
+    "fat_g": 18.9,
+    "carb_g": 128.3,
+    "sodium_mg": 1635.6,
+    "fiber_g": 3.6
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 759.8,
+  "protein_g": 20.3,
+  "health": {
+   "grade": "A",
+   "score": 82,
+   "factors": [
+    "钠偏高（1636mg/份）",
+    "单份热量偏高（760kcal）"
+   ]
+  }
  },
  {
   "id": "r044",
@@ -4097,7 +5080,28 @@
   "source": "import",
   "source_ref": "早餐/蛋饼.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 605.4,
+    "protein_g": 20.4,
+    "fat_g": 14.7,
+    "carb_g": 96.2,
+    "sodium_mg": 1648.8,
+    "fiber_g": 3.5
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 605.4,
+  "protein_g": 20.4,
+  "health": {
+   "grade": "A",
+   "score": 88,
+   "factors": [
+    "钠偏高（1649mg/份）"
+   ]
+  }
  },
  {
   "id": "r045",
@@ -4198,7 +5202,30 @@
   "source": "import",
   "source_ref": "早餐/鸡丝沙汤.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 134.3,
+    "protein_g": 6.5,
+    "fat_g": 5.3,
+    "carb_g": 16.1,
+    "sodium_mg": 119.0,
+    "fiber_g": 2.2
+   },
+   "missing": [
+    "沙汤骨汤料"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 134.3,
+  "protein_g": 6.5,
+  "health": {
+   "grade": "A",
+   "score": 86,
+   "factors": [
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r046",
@@ -4292,7 +5319,32 @@
   "source": "import",
   "source_ref": "早餐/鸡汁辣糊汤.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 552.5,
+    "protein_g": 24.9,
+    "fat_g": 28.5,
+    "carb_g": 48.7,
+    "sodium_mg": 4429.3,
+    "fiber_g": 2.4
+   },
+   "missing": [
+    "海带丝",
+    "干丝"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 552.5,
+  "protein_g": 24.9,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "钠偏高（4429mg/份）",
+    "脂肪供能占 46%"
+   ]
+  }
  },
  {
   "id": "r047",
@@ -4381,7 +5433,29 @@
   "source": "import",
   "source_ref": "汤/山药莲子鸡汤.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 113.2,
+    "protein_g": 7.7,
+    "fat_g": 4.9,
+    "carb_g": 9.9,
+    "sodium_mg": 112.9,
+    "fiber_g": 0.6
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 113.2,
+  "protein_g": 7.7,
+  "health": {
+   "grade": "A",
+   "score": 82,
+   "factors": [
+    "蛋白质偏少",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r048",
@@ -4483,7 +5557,28 @@
   "source": "import",
   "source_ref": "汤/竹荪鹿茸菇鸡汤.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 106.3,
+    "protein_g": 8.3,
+    "fat_g": 2.7,
+    "carb_g": 12.7,
+    "sodium_mg": 24.2,
+    "fiber_g": 3.0
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 106.3,
+  "protein_g": 8.3,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r049",
@@ -4564,7 +5659,30 @@
   "source": "import",
   "source_ref": "汤/肥西老母鸡汤（单品）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 136.7,
+    "protein_g": 14.3,
+    "fat_g": 8.2,
+    "carb_g": 1.5,
+    "sodium_mg": 3552.4,
+    "fiber_g": 0.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 136.7,
+  "protein_g": 14.3,
+  "health": {
+   "grade": "B",
+   "score": 67,
+   "factors": [
+    "钠偏高（3552mg/份）",
+    "脂肪供能占 54%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r050",
@@ -4648,7 +5766,29 @@
   "source": "import",
   "source_ref": "汤/菌菇鸡汤.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 42.3,
+    "protein_g": 2.9,
+    "fat_g": 1.3,
+    "carb_g": 4.3,
+    "sodium_mg": 600.7,
+    "fiber_g": 0.4
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 42.3,
+  "protein_g": 2.9,
+  "health": {
+   "grade": "A",
+   "score": 82,
+   "factors": [
+    "蛋白质偏少",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r051",
@@ -4723,7 +5863,32 @@
   "source": "import",
   "source_ref": "汤/金牌老母鸡汤.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 127.3,
+    "protein_g": 13.0,
+    "fat_g": 6.9,
+    "carb_g": 3.6,
+    "sodium_mg": 3552.4,
+    "fiber_g": 0.2
+   },
+   "missing": [
+    "调味料"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 127.3,
+  "protein_g": 13.0,
+  "health": {
+   "grade": "B",
+   "score": 73,
+   "factors": [
+    "钠偏高（3552mg/份）",
+    "脂肪供能占 49%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r052",
@@ -4802,7 +5967,28 @@
   "source": "import",
   "source_ref": "炒菜/什锦蛋炒饭.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 278.8,
+    "protein_g": 8.1,
+    "fat_g": 11.7,
+    "carb_g": 35.4,
+    "sodium_mg": 221.8,
+    "fiber_g": 0.8
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 278.8,
+  "protein_g": 8.1,
+  "health": {
+   "grade": "A",
+   "score": 92,
+   "factors": [
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r053",
@@ -4906,7 +6092,29 @@
   "source": "import",
   "source_ref": "炒菜/农家小炒肉（玉耳）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 233.4,
+    "protein_g": 11.3,
+    "fat_g": 13.9,
+    "carb_g": 17.7,
+    "sodium_mg": 1225.8,
+    "fiber_g": 3.3
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 233.4,
+  "protein_g": 11.3,
+  "health": {
+   "grade": "A",
+   "score": 81,
+   "factors": [
+    "钠略高（1226mg/份）",
+    "脂肪供能占 54%"
+   ]
+  }
  },
  {
   "id": "r054",
@@ -5013,7 +6221,28 @@
   "source": "import",
   "source_ref": "炒菜/剁椒木耳炒鸡蛋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 171.3,
+    "protein_g": 9.2,
+    "fat_g": 12.0,
+    "carb_g": 7.5,
+    "sodium_mg": 380.6,
+    "fiber_g": 1.9
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 171.3,
+  "protein_g": 9.2,
+  "health": {
+   "grade": "A",
+   "score": 83,
+   "factors": [
+    "脂肪供能占 63%"
+   ]
+  }
  },
  {
   "id": "r055",
@@ -5121,7 +6350,29 @@
   "source": "import",
   "source_ref": "炒菜/包菜炒鸡蛋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 502.8,
+    "protein_g": 15.0,
+    "fat_g": 23.1,
+    "carb_g": 59.4,
+    "sodium_mg": 1442.7,
+    "fiber_g": 2.1
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 502.8,
+  "protein_g": 15.0,
+  "health": {
+   "grade": "A",
+   "score": 83,
+   "factors": [
+    "钠略高（1443mg/份）",
+    "脂肪供能占 41%"
+   ]
+  }
  },
  {
   "id": "r056",
@@ -5222,7 +6473,28 @@
   "source": "import",
   "source_ref": "炒菜/外婆菜炒鸡蛋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 152.7,
+    "protein_g": 11.0,
+    "fat_g": 7.8,
+    "carb_g": 9.7,
+    "sodium_mg": 707.2,
+    "fiber_g": 2.8
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 152.7,
+  "protein_g": 11.0,
+  "health": {
+   "grade": "A",
+   "score": 93,
+   "factors": [
+    "脂肪供能占 46%"
+   ]
+  }
  },
  {
   "id": "r057",
@@ -5314,7 +6586,29 @@
   "source": "import",
   "source_ref": "炒菜/宫保鸡丁.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 754.1,
+    "protein_g": 41.2,
+    "fat_g": 54.6,
+    "carb_g": 27.1,
+    "sodium_mg": 124.6,
+    "fiber_g": 7.5
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 754.1,
+  "protein_g": 41.2,
+  "health": {
+   "grade": "A",
+   "score": 81,
+   "factors": [
+    "脂肪供能占 65%",
+    "单份热量偏高（754kcal）"
+   ]
+  }
  },
  {
   "id": "r058",
@@ -5413,7 +6707,28 @@
   "source": "import",
   "source_ref": "炒菜/家常土豆片.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 269.3,
+    "protein_g": 7.7,
+    "fat_g": 10.4,
+    "carb_g": 40.0,
+    "sodium_mg": 38.3,
+    "fiber_g": 10.2
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 269.3,
+  "protein_g": 7.7,
+  "health": {
+   "grade": "A",
+   "score": 90,
+   "factors": [
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r059",
@@ -5526,7 +6841,31 @@
   "source": "import",
   "source_ref": "炒菜/家常小炒.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 585.9,
+    "protein_g": 35.9,
+    "fat_g": 22.5,
+    "carb_g": 62.5,
+    "sodium_mg": 902.4,
+    "fiber_g": 11.8
+   },
+   "missing": [
+    "大油片丝",
+    "家常小炒料"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 585.9,
+  "protein_g": 35.9,
+  "health": {
+   "grade": "A",
+   "score": 94,
+   "factors": [
+    "钠略高（902mg/份）"
+   ]
+  }
  },
  {
   "id": "r060",
@@ -5634,7 +6973,29 @@
   "source": "import",
   "source_ref": "炒菜/小炒河虾.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 272.3,
+    "protein_g": 21.4,
+    "fat_g": 15.9,
+    "carb_g": 12.3,
+    "sodium_mg": 979.0,
+    "fiber_g": 3.8
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 272.3,
+  "protein_g": 21.4,
+  "health": {
+   "grade": "A",
+   "score": 81,
+   "factors": [
+    "钠略高（979mg/份）",
+    "脂肪供能占 53%"
+   ]
+  }
  },
  {
   "id": "r061",
@@ -5726,7 +7087,30 @@
   "source": "import",
   "source_ref": "炒菜/小炒脆笋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 529.8,
+    "protein_g": 17.7,
+    "fat_g": 41.5,
+    "carb_g": 21.2,
+    "sodium_mg": 144.1,
+    "fiber_g": 8.0
+   },
+   "missing": [
+    "调味料"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 529.8,
+  "protein_g": 17.7,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "脂肪供能占 70%"
+   ]
+  }
  },
  {
   "id": "r062",
@@ -5820,7 +7204,28 @@
   "source": "import",
   "source_ref": "炒菜/小炒面筋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 605.7,
+    "protein_g": 13.3,
+    "fat_g": 21.9,
+    "carb_g": 90.1,
+    "sodium_mg": 531.4,
+    "fiber_g": 6.5
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 605.7,
+  "protein_g": 13.3,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r063",
@@ -5920,7 +7325,30 @@
   "source": "import",
   "source_ref": "炒菜/小炒鸡丁.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 309.4,
+    "protein_g": 22.8,
+    "fat_g": 18.7,
+    "carb_g": 12.2,
+    "sodium_mg": 203.8,
+    "fiber_g": 3.0
+   },
+   "missing": [
+    "调味料"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 309.4,
+  "protein_g": 22.8,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "脂肪供能占 54%"
+   ]
+  }
  },
  {
   "id": "r064",
@@ -6012,7 +7440,28 @@
   "source": "import",
   "source_ref": "炒菜/小炒黄牛肉.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 319.1,
+    "protein_g": 32.8,
+    "fat_g": 16.0,
+    "carb_g": 12.1,
+    "sodium_mg": 179.6,
+    "fiber_g": 3.2
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 319.1,
+  "protein_g": 32.8,
+  "health": {
+   "grade": "A",
+   "score": 93,
+   "factors": [
+    "脂肪供能占 45%"
+   ]
+  }
  },
  {
   "id": "r065",
@@ -6096,7 +7545,29 @@
   "source": "import",
   "source_ref": "炒菜/山药炒木耳.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 256.7,
+    "protein_g": 7.1,
+    "fat_g": 8.8,
+    "carb_g": 40.2,
+    "sodium_mg": 1686.4,
+    "fiber_g": 6.2
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 256.7,
+  "protein_g": 7.1,
+  "health": {
+   "grade": "B",
+   "score": 78,
+   "factors": [
+    "钠偏高（1686mg/份）",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r066",
@@ -6220,7 +7691,30 @@
   "source": "import",
   "source_ref": "炒菜/毛豆烧土鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 473.9,
+    "protein_g": 26.0,
+    "fat_g": 24.1,
+    "carb_g": 38.9,
+    "sodium_mg": 338.4,
+    "fiber_g": 2.0
+   },
+   "missing": [
+    "皮冻"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 473.9,
+  "protein_g": 26.0,
+  "health": {
+   "grade": "A",
+   "score": 89,
+   "factors": [
+    "脂肪供能占 46%"
+   ]
+  }
  },
  {
   "id": "r067",
@@ -6325,7 +7819,31 @@
   "source": "import",
   "source_ref": "炒菜/油渣大白菜.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 169.2,
+    "protein_g": 6.2,
+    "fat_g": 9.5,
+    "carb_g": 15.1,
+    "sodium_mg": 343.7,
+    "fiber_g": 3.6
+   },
+   "missing": [
+    "油渣"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 169.2,
+  "protein_g": 6.2,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "脂肪供能占 51%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r068",
@@ -6410,7 +7928,30 @@
   "source": "import",
   "source_ref": "炒菜/清炒春菜.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 226.8,
+    "protein_g": 2.6,
+    "fat_g": 18.4,
+    "carb_g": 12.1,
+    "sodium_mg": 1449.7,
+    "fiber_g": 2.5
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 226.8,
+  "protein_g": 2.6,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠略高（1450mg/份）",
+    "脂肪供能占 73%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r069",
@@ -6481,7 +8022,30 @@
   "source": "import",
   "source_ref": "炒菜/清炒油麦菜.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 225.9,
+    "protein_g": 3.4,
+    "fat_g": 17.0,
+    "carb_g": 13.6,
+    "sodium_mg": 1356.1,
+    "fiber_g": 4.3
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 225.9,
+  "protein_g": 3.4,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠略高（1356mg/份）",
+    "脂肪供能占 68%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r070",
@@ -6583,7 +8147,29 @@
   "source": "import",
   "source_ref": "炒菜/清炒莴笋片.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 171.9,
+    "protein_g": 1.9,
+    "fat_g": 16.2,
+    "carb_g": 5.5,
+    "sodium_mg": 807.0,
+    "fiber_g": 1.7
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 171.9,
+  "protein_g": 1.9,
+  "health": {
+   "grade": "B",
+   "score": 73,
+   "factors": [
+    "脂肪供能占 85%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r071",
@@ -6668,7 +8254,29 @@
   "source": "import",
   "source_ref": "炒菜/清炒菜心.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 156.2,
+    "protein_g": 5.3,
+    "fat_g": 13.2,
+    "carb_g": 6.2,
+    "sodium_mg": 671.9,
+    "fiber_g": 3.1
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 156.2,
+  "protein_g": 5.3,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "脂肪供能占 76%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r072",
@@ -6739,7 +8347,30 @@
   "source": "import",
   "source_ref": "炒菜/清炒西兰花.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 150.2,
+    "protein_g": 5.8,
+    "fat_g": 8.7,
+    "carb_g": 13.1,
+    "sodium_mg": 3972.1,
+    "fiber_g": 1.9
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 150.2,
+  "protein_g": 5.8,
+  "health": {
+   "grade": "B",
+   "score": 61,
+   "factors": [
+    "钠偏高（3972mg/份）",
+    "脂肪供能占 52%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r073",
@@ -6817,7 +8448,30 @@
   "source": "import",
   "source_ref": "炒菜/清炒青菜.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 178.4,
+    "protein_g": 5.6,
+    "fat_g": 15.6,
+    "carb_g": 6.1,
+    "sodium_mg": 1062.3,
+    "fiber_g": 3.3
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 178.4,
+  "protein_g": 5.6,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠略高（1062mg/份）",
+    "脂肪供能占 79%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r074",
@@ -6902,7 +8556,30 @@
   "source": "import",
   "source_ref": "炒菜/爆炒牛肉.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 437.7,
+    "protein_g": 38.6,
+    "fat_g": 21.1,
+    "carb_g": 24.0,
+    "sodium_mg": 501.4,
+    "fiber_g": 3.3
+   },
+   "missing": [
+    "香芹"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 437.7,
+  "protein_g": 38.6,
+  "health": {
+   "grade": "A",
+   "score": 93,
+   "factors": [
+    "脂肪供能占 43%"
+   ]
+  }
  },
  {
   "id": "r075",
@@ -6980,7 +8657,30 @@
   "source": "import",
   "source_ref": "炒菜/生炒上海青.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 222.9,
+    "protein_g": 4.5,
+    "fat_g": 20.7,
+    "carb_g": 6.2,
+    "sodium_mg": 947.9,
+    "fiber_g": 2.6
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 222.9,
+  "protein_g": 4.5,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠略高（948mg/份）",
+    "脂肪供能占 84%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r076",
@@ -7043,7 +8743,29 @@
   "source": "import",
   "source_ref": "炒菜/糖醋排骨.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 321.8,
+    "protein_g": 13.0,
+    "fat_g": 19.3,
+    "carb_g": 22.2,
+    "sodium_mg": 3513.9,
+    "fiber_g": 1.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 321.8,
+  "protein_g": 13.0,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠偏高（3514mg/份）",
+    "脂肪供能占 54%"
+   ]
+  }
  },
  {
   "id": "r077",
@@ -7122,7 +8844,29 @@
   "source": "import",
   "source_ref": "炒菜/红烧茄子.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 155.8,
+    "protein_g": 4.2,
+    "fat_g": 9.2,
+    "carb_g": 16.2,
+    "sodium_mg": 33.7,
+    "fiber_g": 4.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 155.8,
+  "protein_g": 4.2,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "脂肪供能占 53%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r078",
@@ -7260,7 +9004,33 @@
   "source": "import",
   "source_ref": "炒菜/经典毛豆烧鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 1088.0,
+    "protein_g": 50.6,
+    "fat_g": 52.7,
+    "carb_g": 106.5,
+    "sodium_mg": 1410.1,
+    "fiber_g": 6.6
+   },
+   "missing": [
+    "皮冻"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 1088.0,
+  "protein_g": 50.6,
+  "health": {
+   "grade": "B",
+   "score": 70,
+   "factors": [
+    "钠略高（1410mg/份）",
+    "脂肪供能占 44%",
+    "蛋白质偏多",
+    "单份热量偏高（1088kcal）"
+   ]
+  }
  },
  {
   "id": "r079",
@@ -7354,7 +9124,30 @@
   "source": "import",
   "source_ref": "炒菜/胡萝卜炒木耳.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 216.2,
+    "protein_g": 2.9,
+    "fat_g": 14.7,
+    "carb_g": 19.4,
+    "sodium_mg": 1008.4,
+    "fiber_g": 3.1
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 216.2,
+  "protein_g": 2.9,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠略高（1008mg/份）",
+    "脂肪供能占 61%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r080",
@@ -7468,7 +9261,29 @@
   "source": "import",
   "source_ref": "炒菜/胡萝卜炒肉丝.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 362.6,
+    "protein_g": 16.8,
+    "fat_g": 21.1,
+    "carb_g": 28.0,
+    "sodium_mg": 2062.4,
+    "fiber_g": 2.7
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 362.6,
+  "protein_g": 16.8,
+  "health": {
+   "grade": "B",
+   "score": 75,
+   "factors": [
+    "钠偏高（2062mg/份）",
+    "脂肪供能占 52%"
+   ]
+  }
  },
  {
   "id": "r081",
@@ -7568,7 +9383,29 @@
   "source": "import",
   "source_ref": "炒菜/胡萝卜炒肉片.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 300.3,
+    "protein_g": 21.5,
+    "fat_g": 14.1,
+    "carb_g": 23.0,
+    "sodium_mg": 1372.4,
+    "fiber_g": 3.1
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 300.3,
+  "protein_g": 21.5,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "钠略高（1372mg/份）",
+    "脂肪供能占 42%"
+   ]
+  }
  },
  {
   "id": "r082",
@@ -7654,7 +9491,29 @@
   "source": "import",
   "source_ref": "炒菜/胡萝卜炒鸡蛋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 208.1,
+    "protein_g": 8.7,
+    "fat_g": 12.9,
+    "carb_g": 14.9,
+    "sodium_mg": 1002.0,
+    "fiber_g": 1.6
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 208.1,
+  "protein_g": 8.7,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "钠略高（1002mg/份）",
+    "脂肪供能占 56%"
+   ]
+  }
  },
  {
   "id": "r083",
@@ -7732,7 +9591,29 @@
   "source": "import",
   "source_ref": "炒菜/芹菜炒香干.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 259.5,
+    "protein_g": 16.6,
+    "fat_g": 11.6,
+    "carb_g": 21.8,
+    "sodium_mg": 1414.8,
+    "fiber_g": 4.5
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 259.5,
+  "protein_g": 16.6,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "钠略高（1415mg/份）",
+    "脂肪供能占 40%"
+   ]
+  }
  },
  {
   "id": "r084",
@@ -7818,7 +9699,28 @@
   "source": "import",
   "source_ref": "炒菜/芹菜香干炒肉丝.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 386.2,
+    "protein_g": 33.6,
+    "fat_g": 16.6,
+    "carb_g": 25.3,
+    "sodium_mg": 1337.6,
+    "fiber_g": 5.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 386.2,
+  "protein_g": 33.6,
+  "health": {
+   "grade": "A",
+   "score": 94,
+   "factors": [
+    "钠略高（1338mg/份）"
+   ]
+  }
  },
  {
   "id": "r085",
@@ -7897,7 +9799,30 @@
   "source": "import",
   "source_ref": "炒菜/莴笋丝炒鸡蛋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 135.0,
+    "protein_g": 7.9,
+    "fat_g": 9.7,
+    "carb_g": 4.1,
+    "sodium_mg": 887.8,
+    "fiber_g": 0.5
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 135.0,
+  "protein_g": 7.9,
+  "health": {
+   "grade": "B",
+   "score": 69,
+   "factors": [
+    "脂肪供能占 65%",
+    "蛋白质偏少",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r086",
@@ -7967,7 +9892,29 @@
   "source": "import",
   "source_ref": "炒菜/菠萝咕咾肉.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 338.9,
+    "protein_g": 16.2,
+    "fat_g": 22.4,
+    "carb_g": 18.3,
+    "sodium_mg": 1734.3,
+    "fiber_g": 1.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 338.9,
+  "protein_g": 16.2,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠偏高（1734mg/份）",
+    "脂肪供能占 59%"
+   ]
+  }
  },
  {
   "id": "r087",
@@ -8083,7 +10030,29 @@
   "source": "import",
   "source_ref": "炒菜/菠萝咕咾肉时蔬饭.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 718.5,
+    "protein_g": 33.4,
+    "fat_g": 27.3,
+    "carb_g": 89.2,
+    "sodium_mg": 1380.4,
+    "fiber_g": 7.8
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 718.5,
+  "protein_g": 33.4,
+  "health": {
+   "grade": "A",
+   "score": 88,
+   "factors": [
+    "钠略高（1380mg/份）",
+    "单份热量偏高（718kcal）"
+   ]
+  }
  },
  {
   "id": "r088",
@@ -8167,7 +10136,30 @@
   "source": "import",
   "source_ref": "炒菜/蒜泥菠菜.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 209.3,
+    "protein_g": 3.5,
+    "fat_g": 18.3,
+    "carb_g": 8.5,
+    "sodium_mg": 2145.2,
+    "fiber_g": 1.9
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 209.3,
+  "protein_g": 3.5,
+  "health": {
+   "grade": "B",
+   "score": 61,
+   "factors": [
+    "钠偏高（2145mg/份）",
+    "脂肪供能占 79%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r089",
@@ -8273,7 +10265,28 @@
   "source": "import",
   "source_ref": "炒菜/蒜苔炒木耳.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 416.6,
+    "protein_g": 15.5,
+    "fat_g": 10.6,
+    "carb_g": 62.6,
+    "sodium_mg": 4490.3,
+    "fiber_g": 18.8
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 416.6,
+  "protein_g": 15.5,
+  "health": {
+   "grade": "A",
+   "score": 88,
+   "factors": [
+    "钠偏高（4490mg/份）"
+   ]
+  }
  },
  {
   "id": "r090",
@@ -8358,7 +10371,29 @@
   "source": "import",
   "source_ref": "炒菜/蒜苔炒香干.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 351.5,
+    "protein_g": 16.7,
+    "fat_g": 21.6,
+    "carb_g": 22.2,
+    "sodium_mg": 1416.1,
+    "fiber_g": 4.7
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 351.5,
+  "protein_g": 16.7,
+  "health": {
+   "grade": "A",
+   "score": 81,
+   "factors": [
+    "钠略高（1416mg/份）",
+    "脂肪供能占 55%"
+   ]
+  }
  },
  {
   "id": "r091",
@@ -8466,7 +10501,28 @@
   "source": "import",
   "source_ref": "炒菜/蒜苔炒鸡胗.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 488.8,
+    "protein_g": 26.8,
+    "fat_g": 36.2,
+    "carb_g": 14.0,
+    "sodium_mg": 655.2,
+    "fiber_g": 2.8
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 488.8,
+  "protein_g": 26.8,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "脂肪供能占 67%"
+   ]
+  }
  },
  {
   "id": "r092",
@@ -8552,7 +10608,28 @@
   "source": "import",
   "source_ref": "炒菜/蒜黄炒鸡蛋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 177.5,
+    "protein_g": 9.5,
+    "fat_g": 10.1,
+    "carb_g": 11.2,
+    "sodium_mg": 890.0,
+    "fiber_g": 3.1
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 177.5,
+  "protein_g": 9.5,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "脂肪供能占 51%"
+   ]
+  }
  },
  {
   "id": "r093",
@@ -8653,7 +10730,29 @@
   "source": "import",
   "source_ref": "炒菜/蚕豆炒虾仁.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 191.6,
+    "protein_g": 10.8,
+    "fat_g": 9.0,
+    "carb_g": 15.7,
+    "sodium_mg": 1115.6,
+    "fiber_g": 4.3
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 191.6,
+  "protein_g": 10.8,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "钠略高（1116mg/份）",
+    "脂肪供能占 42%"
+   ]
+  }
  },
  {
   "id": "r094",
@@ -8739,7 +10838,29 @@
   "source": "import",
   "source_ref": "炒菜/蚕豆炒鸡蛋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 165.7,
+    "protein_g": 9.1,
+    "fat_g": 10.0,
+    "carb_g": 9.2,
+    "sodium_mg": 1600.2,
+    "fiber_g": 2.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 165.7,
+  "protein_g": 9.1,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠偏高（1600mg/份）",
+    "脂肪供能占 54%"
+   ]
+  }
  },
  {
   "id": "r095",
@@ -8816,7 +10937,28 @@
   "source": "import",
   "source_ref": "炒菜/西兰花炒鸡胸肉.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 299.6,
+    "protein_g": 24.2,
+    "fat_g": 18.1,
+    "carb_g": 10.9,
+    "sodium_mg": 104.5,
+    "fiber_g": 2.0
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 299.6,
+  "protein_g": 24.2,
+  "health": {
+   "grade": "A",
+   "score": 83,
+   "factors": [
+    "脂肪供能占 54%"
+   ]
+  }
  },
  {
   "id": "r096",
@@ -8916,7 +11058,31 @@
   "source": "import",
   "source_ref": "炒菜/西芹炒虾仁.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 611.2,
+    "protein_g": 31.5,
+    "fat_g": 31.4,
+    "carb_g": 54.6,
+    "sodium_mg": 2486.6,
+    "fiber_g": 3.6
+   },
+   "missing": [
+    "西芹段"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 611.2,
+  "protein_g": 31.5,
+  "health": {
+   "grade": "A",
+   "score": 81,
+   "factors": [
+    "钠偏高（2487mg/份）",
+    "脂肪供能占 46%"
+   ]
+  }
  },
  {
   "id": "r097",
@@ -9003,7 +11169,29 @@
   "source": "import",
   "source_ref": "炒菜/豆皮毛白菜.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 597.9,
+    "protein_g": 42.9,
+    "fat_g": 36.4,
+    "carb_g": 26.8,
+    "sodium_mg": 935.9,
+    "fiber_g": 2.3
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 597.9,
+  "protein_g": 42.9,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "钠略高（936mg/份）",
+    "脂肪供能占 55%"
+   ]
+  }
  },
  {
   "id": "r098",
@@ -9074,7 +11262,29 @@
   "source": "import",
   "source_ref": "炒菜/贵州风味辣子鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 384.6,
+    "protein_g": 14.9,
+    "fat_g": 20.0,
+    "carb_g": 33.9,
+    "sodium_mg": 5158.2,
+    "fiber_g": 1.6
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 384.6,
+  "protein_g": 14.9,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "钠偏高（5158mg/份）",
+    "脂肪供能占 47%"
+   ]
+  }
  },
  {
   "id": "r099",
@@ -9173,7 +11383,28 @@
   "source": "import",
   "source_ref": "炒菜/酸辣包菜.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 375.2,
+    "protein_g": 8.6,
+    "fat_g": 10.5,
+    "carb_g": 62.1,
+    "sodium_mg": 3081.4,
+    "fiber_g": 2.3
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 375.2,
+  "protein_g": 8.6,
+  "health": {
+   "grade": "A",
+   "score": 84,
+   "factors": [
+    "钠偏高（3081mg/份）"
+   ]
+  }
  },
  {
   "id": "r100",
@@ -9263,7 +11494,30 @@
   "source": "import",
   "source_ref": "炒菜/酸辣土豆丝.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 178.2,
+    "protein_g": 3.8,
+    "fat_g": 8.3,
+    "carb_g": 22.7,
+    "sodium_mg": 4573.4,
+    "fiber_g": 1.3
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 178.2,
+  "protein_g": 3.8,
+  "health": {
+   "grade": "B",
+   "score": 67,
+   "factors": [
+    "钠偏高（4573mg/份）",
+    "脂肪供能占 42%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r101",
@@ -9371,7 +11625,30 @@
   "source": "import",
   "source_ref": "炒菜/酸辣大白菜.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 201.9,
+    "protein_g": 2.7,
+    "fat_g": 18.1,
+    "carb_g": 7.7,
+    "sodium_mg": 1458.5,
+    "fiber_g": 1.1
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 201.9,
+  "protein_g": 2.7,
+  "health": {
+   "grade": "B",
+   "score": 67,
+   "factors": [
+    "钠略高（1458mg/份）",
+    "脂肪供能占 81%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r102",
@@ -9473,7 +11750,31 @@
   "source": "import",
   "source_ref": "炒菜/酸辣海带丝.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 248.2,
+    "protein_g": 9.6,
+    "fat_g": 15.1,
+    "carb_g": 19.7,
+    "sodium_mg": 2632.3,
+    "fiber_g": 1.3
+   },
+   "missing": [
+    "干海带丝"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 248.2,
+  "protein_g": 9.6,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠偏高（2632mg/份）",
+    "脂肪供能占 55%"
+   ]
+  }
  },
  {
   "id": "r103",
@@ -9576,7 +11877,28 @@
   "source": "import",
   "source_ref": "炒菜/青椒毛豆米.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 511.5,
+    "protein_g": 12.1,
+    "fat_g": 11.8,
+    "carb_g": 90.6,
+    "sodium_mg": 1514.0,
+    "fiber_g": 3.5
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 511.5,
+  "protein_g": 12.1,
+  "health": {
+   "grade": "A",
+   "score": 88,
+   "factors": [
+    "钠偏高（1514mg/份）"
+   ]
+  }
  },
  {
   "id": "r104",
@@ -9662,7 +11984,29 @@
   "source": "import",
   "source_ref": "炒菜/青椒炒鸡蛋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 182.6,
+    "protein_g": 8.6,
+    "fat_g": 12.9,
+    "carb_g": 9.7,
+    "sodium_mg": 1059.9,
+    "fiber_g": 1.7
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 182.6,
+  "protein_g": 8.6,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "钠略高（1060mg/份）",
+    "脂肪供能占 64%"
+   ]
+  }
  },
  {
   "id": "r105",
@@ -9748,7 +12092,29 @@
   "source": "import",
   "source_ref": "炒菜/鱼香肉丝.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 504.7,
+    "protein_g": 38.3,
+    "fat_g": 22.7,
+    "carb_g": 36.9,
+    "sodium_mg": 3371.5,
+    "fiber_g": 4.7
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 504.7,
+  "protein_g": 38.3,
+  "health": {
+   "grade": "A",
+   "score": 81,
+   "factors": [
+    "钠偏高（3372mg/份）",
+    "脂肪供能占 40%"
+   ]
+  }
  },
  {
   "id": "r106",
@@ -9844,7 +12210,30 @@
   "source": "import",
   "source_ref": "炒菜/鹌鹑蛋红烧肉.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 483.9,
+    "protein_g": 13.7,
+    "fat_g": 41.6,
+    "carb_g": 11.9,
+    "sodium_mg": 1242.4,
+    "fiber_g": 0.4
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 483.9,
+  "protein_g": 13.7,
+  "health": {
+   "grade": "B",
+   "score": 73,
+   "factors": [
+    "钠略高（1242mg/份）",
+    "脂肪供能占 77%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r107",
@@ -9941,7 +12330,30 @@
   "source": "import",
   "source_ref": "炒菜/黄瓜炒红肠.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 396.3,
+    "protein_g": 23.0,
+    "fat_g": 28.3,
+    "carb_g": 13.3,
+    "sodium_mg": 1655.3,
+    "fiber_g": 0.8
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 396.3,
+  "protein_g": 23.0,
+  "health": {
+   "grade": "B",
+   "score": 67,
+   "factors": [
+    "钠偏高（1655mg/份）",
+    "脂肪供能占 64%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r108",
@@ -10037,7 +12449,29 @@
   "source": "import",
   "source_ref": "炖菜/小鸡炖蘑菇.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 522.6,
+    "protein_g": 28.7,
+    "fat_g": 36.9,
+    "carb_g": 18.9,
+    "sodium_mg": 1933.1,
+    "fiber_g": 1.7
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 522.6,
+  "protein_g": 28.7,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠偏高（1933mg/份）",
+    "脂肪供能占 64%"
+   ]
+  }
  },
  {
   "id": "r109",
@@ -10154,7 +12588,30 @@
   "source": "import",
   "source_ref": "炖菜/板栗烧鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 409.9,
+    "protein_g": 20.0,
+    "fat_g": 28.9,
+    "carb_g": 19.0,
+    "sodium_mg": 599.2,
+    "fiber_g": 1.6
+   },
+   "missing": [
+    "板栗"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 409.9,
+  "protein_g": 20.0,
+  "health": {
+   "grade": "A",
+   "score": 83,
+   "factors": [
+    "脂肪供能占 63%"
+   ]
+  }
  },
  {
   "id": "r110",
@@ -10224,7 +12681,28 @@
   "source": "import",
   "source_ref": "炖菜/梅干菜凤爪翅.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 164.8,
+    "protein_g": 14.1,
+    "fat_g": 9.1,
+    "carb_g": 6.3,
+    "sodium_mg": 106.6,
+    "fiber_g": 1.6
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 164.8,
+  "protein_g": 14.1,
+  "health": {
+   "grade": "A",
+   "score": 89,
+   "factors": [
+    "脂肪供能占 50%"
+   ]
+  }
  },
  {
   "id": "r111",
@@ -10342,7 +12820,30 @@
   "source": "import",
   "source_ref": "炖菜/甜辣辣年糕烧鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 744.5,
+    "protein_g": 33.1,
+    "fat_g": 42.5,
+    "carb_g": 58.7,
+    "sodium_mg": 972.6,
+    "fiber_g": 3.6
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 744.5,
+  "protein_g": 33.1,
+  "health": {
+   "grade": "B",
+   "score": 75,
+   "factors": [
+    "钠略高（973mg/份）",
+    "脂肪供能占 51%",
+    "单份热量偏高（744kcal）"
+   ]
+  }
  },
  {
   "id": "r112",
@@ -10437,7 +12938,30 @@
   "source": "import",
   "source_ref": "炖菜/红烧冬瓜.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 156.6,
+    "protein_g": 3.6,
+    "fat_g": 12.1,
+    "carb_g": 9.9,
+    "sodium_mg": 2123.4,
+    "fiber_g": 2.5
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 156.6,
+  "protein_g": 3.6,
+  "health": {
+   "grade": "B",
+   "score": 65,
+   "factors": [
+    "钠偏高（2123mg/份）",
+    "脂肪供能占 70%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r113",
@@ -10507,7 +13031,28 @@
   "source": "import",
   "source_ref": "炖菜/肉汁素鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 246.8,
+    "protein_g": 16.3,
+    "fat_g": 14.0,
+    "carb_g": 15.2,
+    "sodium_mg": 404.1,
+    "fiber_g": 2.6
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 246.8,
+  "protein_g": 16.3,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "脂肪供能占 51%"
+   ]
+  }
  },
  {
   "id": "r114",
@@ -10642,7 +13187,29 @@
   "source": "import",
   "source_ref": "炖菜/酸菜血旺豆腐.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 515.1,
+    "protein_g": 35.3,
+    "fat_g": 33.3,
+    "carb_g": 19.3,
+    "sodium_mg": 2072.1,
+    "fiber_g": 2.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 515.1,
+  "protein_g": 35.3,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠偏高（2072mg/份）",
+    "脂肪供能占 58%"
+   ]
+  }
  },
  {
   "id": "r115",
@@ -10754,7 +13321,30 @@
   "source": "import",
   "source_ref": "炖菜/银鱼浦鸡蛋.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 318.5,
+    "protein_g": 32.3,
+    "fat_g": 16.4,
+    "carb_g": 7.8,
+    "sodium_mg": 4067.3,
+    "fiber_g": 0.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 318.5,
+  "protein_g": 32.3,
+  "health": {
+   "grade": "B",
+   "score": 73,
+   "factors": [
+    "钠偏高（4067mg/份）",
+    "脂肪供能占 46%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r116",
@@ -10843,7 +13433,32 @@
   "source": "import",
   "source_ref": "炖菜/香辣鸡杂.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 897.1,
+    "protein_g": 64.6,
+    "fat_g": 64.2,
+    "carb_g": 17.5,
+    "sodium_mg": 2899.6,
+    "fiber_g": 0.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 897.1,
+  "protein_g": 64.6,
+  "health": {
+   "grade": "C",
+   "score": 56,
+   "factors": [
+    "钠偏高（2900mg/份）",
+    "脂肪供能占 64%",
+    "蛋白质偏多",
+    "膳食纤维很少",
+    "单份热量偏高（897kcal）"
+   ]
+  }
  },
  {
   "id": "r117",
@@ -10907,7 +13522,29 @@
   "source": "import",
   "source_ref": "炖菜/鸡血汤.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 132.1,
+    "protein_g": 14.0,
+    "fat_g": 7.8,
+    "carb_g": 1.5,
+    "sodium_mg": 100.4,
+    "fiber_g": 0.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 132.1,
+  "protein_g": 14.0,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 53%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r118",
@@ -10966,7 +13603,30 @@
   "source": "import",
   "source_ref": "炸品/炸鸡排（调理鸡排）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 566.4,
+    "protein_g": 24.1,
+    "fat_g": 19.3,
+    "carb_g": 75.1,
+    "sodium_mg": 668.0,
+    "fiber_g": 3.1
+   },
+   "missing": [
+    "起酥油"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 566.4,
+  "protein_g": 24.1,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r119",
@@ -11046,7 +13706,28 @@
   "source": "import",
   "source_ref": "烫菜/特色热干面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 191.6,
+    "protein_g": 6.1,
+    "fat_g": 4.6,
+    "carb_g": 31.9,
+    "sodium_mg": 397.7,
+    "fiber_g": 2.3
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 191.6,
+  "protein_g": 6.1,
+  "health": {
+   "grade": "A",
+   "score": 86,
+   "factors": [
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r120",
@@ -11127,7 +13808,29 @@
   "source": "import",
   "source_ref": "烫菜/白灼虾（8只）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 197.1,
+    "protein_g": 15.8,
+    "fat_g": 12.7,
+    "carb_g": 3.3,
+    "sodium_mg": 559.7,
+    "fiber_g": 0.3
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 197.1,
+  "protein_g": 15.8,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 58%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r121",
@@ -11219,7 +13922,29 @@
   "source": "import",
   "source_ref": "烫菜/菠菜蛋皮丝.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 151.7,
+    "protein_g": 7.9,
+    "fat_g": 9.9,
+    "carb_g": 9.2,
+    "sodium_mg": 681.1,
+    "fiber_g": 2.9
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 151.7,
+  "protein_g": 7.9,
+  "health": {
+   "grade": "B",
+   "score": 77,
+   "factors": [
+    "脂肪供能占 59%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r122",
@@ -11292,7 +14017,29 @@
   "source": "import",
   "source_ref": "烫菜/葱油拌面.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 264.8,
+    "protein_g": 4.7,
+    "fat_g": 11.8,
+    "carb_g": 35.3,
+    "sodium_mg": 465.0,
+    "fiber_g": 1.2
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 264.8,
+  "protein_g": 4.7,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 40%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r123",
@@ -11393,7 +14140,29 @@
   "source": "import",
   "source_ref": "烫菜/香脆木耳.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 139.0,
+    "protein_g": 1.6,
+    "fat_g": 8.2,
+    "carb_g": 15.1,
+    "sodium_mg": 591.7,
+    "fiber_g": 1.4
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 139.0,
+  "protein_g": 1.6,
+  "health": {
+   "grade": "B",
+   "score": 73,
+   "factors": [
+    "脂肪供能占 53%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r124",
@@ -11486,7 +14255,29 @@
   "source": "import",
   "source_ref": "烫菜/麻辣鸡块.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 188.9,
+    "protein_g": 12.3,
+    "fat_g": 13.1,
+    "carb_g": 5.5,
+    "sodium_mg": 758.3,
+    "fiber_g": 0.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 188.9,
+  "protein_g": 12.3,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 62%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r125",
@@ -11584,7 +14375,29 @@
   "source": "import",
   "source_ref": "煮锅/冒烤鸭.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 378.4,
+    "protein_g": 22.3,
+    "fat_g": 30.5,
+    "carb_g": 3.9,
+    "sodium_mg": 81.4,
+    "fiber_g": 0.3
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 378.4,
+  "protein_g": 22.3,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 73%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r126",
@@ -11689,7 +14502,31 @@
   "source": "import",
   "source_ref": "煮锅/嗨嗨锅（泡椒鸡米花米线）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 294.4,
+    "protein_g": 12.2,
+    "fat_g": 6.7,
+    "carb_g": 46.4,
+    "sodium_mg": 449.8,
+    "fiber_g": 5.1
+   },
+   "missing": [
+    "海带丝",
+    "骨汤调味料"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 294.4,
+  "protein_g": 12.2,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r127",
@@ -11811,7 +14648,30 @@
   "source": "import",
   "source_ref": "煮锅/金汤酸菜鱼（大份）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 574.4,
+    "protein_g": 23.0,
+    "fat_g": 25.1,
+    "carb_g": 66.6,
+    "sodium_mg": 753.7,
+    "fiber_g": 3.7
+   },
+   "missing": [
+    "金汤"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 574.4,
+  "protein_g": 23.0,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r128",
@@ -11882,7 +14742,29 @@
   "source": "import",
   "source_ref": "煮锅/铜锅安格斯肥牛.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 329.6,
+    "protein_g": 36.6,
+    "fat_g": 17.7,
+    "carb_g": 6.6,
+    "sodium_mg": 152.9,
+    "fiber_g": 0.8
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 329.6,
+  "protein_g": 36.6,
+  "health": {
+   "grade": "A",
+   "score": 85,
+   "factors": [
+    "脂肪供能占 48%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r129",
@@ -11988,7 +14870,29 @@
   "source": "import",
   "source_ref": "煮锅/铜锅川味水煮肉片.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 151.2,
+    "protein_g": 6.7,
+    "fat_g": 10.4,
+    "carb_g": 8.0,
+    "sodium_mg": 608.9,
+    "fiber_g": 1.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 151.2,
+  "protein_g": 6.7,
+  "health": {
+   "grade": "B",
+   "score": 73,
+   "factors": [
+    "脂肪供能占 62%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r130",
@@ -12075,7 +14979,28 @@
   "source": "import",
   "source_ref": "煮锅/铜锅番茄虾滑.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 94.0,
+    "protein_g": 6.2,
+    "fat_g": 1.6,
+    "carb_g": 13.9,
+    "sodium_mg": 209.0,
+    "fiber_g": 1.1
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 94.0,
+  "protein_g": 6.2,
+  "health": {
+   "grade": "A",
+   "score": 86,
+   "factors": [
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r131",
@@ -12155,7 +15080,28 @@
   "source": "import",
   "source_ref": "煮锅/铜锅豆花鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 281.6,
+    "protein_g": 16.6,
+    "fat_g": 18.0,
+    "carb_g": 12.7,
+    "sodium_mg": 67.9,
+    "fiber_g": 5.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 281.6,
+  "protein_g": 16.6,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "脂肪供能占 58%"
+   ]
+  }
  },
  {
   "id": "r132",
@@ -12212,7 +15158,29 @@
   "source": "import",
   "source_ref": "砂锅菜/砂锅牛杂煲.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 221.7,
+    "protein_g": 16.3,
+    "fat_g": 14.8,
+    "carb_g": 6.9,
+    "sodium_mg": 450.4,
+    "fiber_g": 0.6
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 221.7,
+  "protein_g": 16.3,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 60%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r133",
@@ -12277,7 +15245,28 @@
   "source": "import",
   "source_ref": "砂锅菜/砂锅番茄米线.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 293.4,
+    "protein_g": 8.6,
+    "fat_g": 2.7,
+    "carb_g": 59.9,
+    "sodium_mg": 382.9,
+    "fiber_g": 2.9
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 293.4,
+  "protein_g": 8.6,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r134",
@@ -12377,7 +15366,28 @@
   "source": "import",
   "source_ref": "砂锅菜/砂锅老坛酸菜鱼.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 231.1,
+    "protein_g": 6.5,
+    "fat_g": 10.1,
+    "carb_g": 28.6,
+    "sodium_mg": 663.6,
+    "fiber_g": 1.9
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 231.1,
+  "protein_g": 6.5,
+  "health": {
+   "grade": "A",
+   "score": 86,
+   "factors": [
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r135",
@@ -12461,7 +15471,28 @@
   "source": "import",
   "source_ref": "砂锅菜/砂锅肉汁素鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 326.9,
+    "protein_g": 16.5,
+    "fat_g": 23.9,
+    "carb_g": 12.9,
+    "sodium_mg": 400.7,
+    "fiber_g": 2.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 326.9,
+  "protein_g": 16.5,
+  "health": {
+   "grade": "A",
+   "score": 83,
+   "factors": [
+    "脂肪供能占 66%"
+   ]
+  }
  },
  {
   "id": "r136",
@@ -12574,7 +15605,31 @@
   "source": "import",
   "source_ref": "砂锅菜/砂锅腐竹.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 896.1,
+    "protein_g": 72.3,
+    "fat_g": 51.7,
+    "carb_g": 36.8,
+    "sodium_mg": 1677.1,
+    "fiber_g": 1.7
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 896.1,
+  "protein_g": 72.3,
+  "health": {
+   "grade": "B",
+   "score": 60,
+   "factors": [
+    "钠偏高（1677mg/份）",
+    "脂肪供能占 52%",
+    "蛋白质偏多",
+    "单份热量偏高（896kcal）"
+   ]
+  }
  },
  {
   "id": "r137",
@@ -12681,7 +15736,28 @@
   "source": "import",
   "source_ref": "砂锅菜/砂锅豆花鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 565.5,
+    "protein_g": 30.5,
+    "fat_g": 44.7,
+    "carb_g": 11.3,
+    "sodium_mg": 727.5,
+    "fiber_g": 1.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 565.5,
+  "protein_g": 30.5,
+  "health": {
+   "grade": "A",
+   "score": 83,
+   "factors": [
+    "脂肪供能占 71%"
+   ]
+  }
  },
  {
   "id": "r138",
@@ -12774,7 +15850,30 @@
   "source": "import",
   "source_ref": "砂锅菜/砂锅酸菜鱼.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 250.8,
+    "protein_g": 9.5,
+    "fat_g": 11.4,
+    "carb_g": 28.1,
+    "sodium_mg": 123.6,
+    "fiber_g": 1.9
+   },
+   "missing": [
+    "金汤"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 250.8,
+  "protein_g": 9.5,
+  "health": {
+   "grade": "A",
+   "score": 89,
+   "factors": [
+    "脂肪供能占 41%"
+   ]
+  }
  },
  {
   "id": "r139",
@@ -12876,7 +15975,28 @@
   "source": "import",
   "source_ref": "砂锅菜/砂锅香辣鱿鱼.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 169.4,
+    "protein_g": 15.1,
+    "fat_g": 3.6,
+    "carb_g": 19.3,
+    "sodium_mg": 1168.6,
+    "fiber_g": 1.6
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 169.4,
+  "protein_g": 15.1,
+  "health": {
+   "grade": "A",
+   "score": 90,
+   "factors": [
+    "钠略高（1169mg/份）"
+   ]
+  }
  },
  {
   "id": "r140",
@@ -12989,7 +16109,28 @@
   "source": "import",
   "source_ref": "蒸菜/三色虾仁.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 153.3,
+    "protein_g": 12.9,
+    "fat_g": 3.9,
+    "carb_g": 16.9,
+    "sodium_mg": 401.7,
+    "fiber_g": 2.4
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 153.3,
+  "protein_g": 12.9,
+  "health": {
+   "grade": "A",
+   "score": 96,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r141",
@@ -13078,7 +16219,28 @@
   "source": "import",
   "source_ref": "蒸菜/凤爪蒸豆米.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 253.5,
+    "protein_g": 24.4,
+    "fat_g": 13.8,
+    "carb_g": 9.5,
+    "sodium_mg": 414.1,
+    "fiber_g": 2.9
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 253.5,
+  "protein_g": 24.4,
+  "health": {
+   "grade": "A",
+   "score": 93,
+   "factors": [
+    "脂肪供能占 49%"
+   ]
+  }
  },
  {
   "id": "r142",
@@ -13137,7 +16299,28 @@
   "source": "import",
   "source_ref": "蒸菜/剁椒鱼头.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 125.1,
+    "protein_g": 18.9,
+    "fat_g": 4.5,
+    "carb_g": 1.2,
+    "sodium_mg": 204.0,
+    "fiber_g": 0.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 125.1,
+  "protein_g": 18.9,
+  "health": {
+   "grade": "A",
+   "score": 92,
+   "factors": [
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r143",
@@ -13196,7 +16379,30 @@
   "source": "import",
   "source_ref": "蒸菜/咸蛋黄狮子头（蒸制版）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 161.6,
+    "protein_g": 10.8,
+    "fat_g": 10.8,
+    "carb_g": 5.4,
+    "sodium_mg": 2300.1,
+    "fiber_g": 0.0
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 161.6,
+  "protein_g": 10.8,
+  "health": {
+   "grade": "B",
+   "score": 67,
+   "factors": [
+    "钠偏高（2300mg/份）",
+    "脂肪供能占 60%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r144",
@@ -13259,7 +16465,31 @@
   "source": "import",
   "source_ref": "蒸菜/奥尔良鸡翅.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 420.5,
+    "protein_g": 26.8,
+    "fat_g": 21.3,
+    "carb_g": 32.9,
+    "sodium_mg": 852.8,
+    "fiber_g": 2.0
+   },
+   "missing": [
+    "翅根",
+    "奥尔良腌料"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 420.5,
+  "protein_g": 26.8,
+  "health": {
+   "grade": "A",
+   "score": 89,
+   "factors": [
+    "脂肪供能占 46%"
+   ]
+  }
  },
  {
   "id": "r145",
@@ -13358,7 +16588,29 @@
   "source": "import",
   "source_ref": "蒸菜/梅菜扣肉.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 372.0,
+    "protein_g": 19.6,
+    "fat_g": 24.1,
+    "carb_g": 18.9,
+    "sodium_mg": 1581.5,
+    "fiber_g": 2.4
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 372.0,
+  "protein_g": 19.6,
+  "health": {
+   "grade": "B",
+   "score": 71,
+   "factors": [
+    "钠偏高（1582mg/份）",
+    "脂肪供能占 58%"
+   ]
+  }
  },
  {
   "id": "r146",
@@ -13427,7 +16679,29 @@
   "source": "import",
   "source_ref": "蒸菜/番茄菌菇肉丸.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 274.1,
+    "protein_g": 19.9,
+    "fat_g": 17.7,
+    "carb_g": 9.7,
+    "sodium_mg": 505.8,
+    "fiber_g": 0.7
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 274.1,
+  "protein_g": 19.9,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 58%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r147",
@@ -13514,7 +16788,30 @@
   "source": "import",
   "source_ref": "蒸菜/白切鸡.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 212.4,
+    "protein_g": 8.4,
+    "fat_g": 9.0,
+    "carb_g": 25.8,
+    "sodium_mg": 719.8,
+    "fiber_g": 1.0
+   },
+   "missing": [
+    "岭南黄"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 212.4,
+  "protein_g": 8.4,
+  "health": {
+   "grade": "A",
+   "score": 96,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r148",
@@ -13575,7 +16872,29 @@
   "source": "import",
   "source_ref": "蒸菜/竹笋蒸鸡翅.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 93.7,
+    "protein_g": 8.4,
+    "fat_g": 5.7,
+    "carb_g": 2.2,
+    "sodium_mg": 41.4,
+    "fiber_g": 0.0
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 93.7,
+  "protein_g": 8.4,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 55%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r149",
@@ -13662,7 +16981,28 @@
   "source": "import",
   "source_ref": "蒸菜/粉蒸肉.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 306.5,
+    "protein_g": 11.6,
+    "fat_g": 3.1,
+    "carb_g": 58.1,
+    "sodium_mg": 193.0,
+    "fiber_g": 2.2
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 306.5,
+  "protein_g": 11.6,
+  "health": {
+   "grade": "A",
+   "score": 96,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r150",
@@ -13748,7 +17088,31 @@
   "source": "import",
   "source_ref": "蒸菜/肉饼蒸蛋（常规版）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 197.6,
+    "protein_g": 15.9,
+    "fat_g": 13.0,
+    "carb_g": 4.5,
+    "sodium_mg": 607.6,
+    "fiber_g": 0.0
+   },
+   "missing": [
+    "调味料"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 197.6,
+  "protein_g": 15.9,
+  "health": {
+   "grade": "B",
+   "score": 79,
+   "factors": [
+    "脂肪供能占 59%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r151",
@@ -13810,7 +17174,29 @@
   "source": "import",
   "source_ref": "蒸菜/胡萝卜牛肉.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 55.1,
+    "protein_g": 6.0,
+    "fat_g": 1.3,
+    "carb_g": 5.2,
+    "sodium_mg": 60.6,
+    "fiber_g": 0.6
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 55.1,
+  "protein_g": 6.0,
+  "health": {
+   "grade": "A",
+   "score": 82,
+   "factors": [
+    "蛋白质偏少",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r152",
@@ -13915,7 +17301,30 @@
   "source": "import",
   "source_ref": "蒸菜/葱油鸡（小母鸡版）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 277.8,
+    "protein_g": 14.0,
+    "fat_g": 22.6,
+    "carb_g": 5.1,
+    "sodium_mg": 1381.4,
+    "fiber_g": 0.2
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 277.8,
+  "protein_g": 14.0,
+  "health": {
+   "grade": "B",
+   "score": 73,
+   "factors": [
+    "钠略高（1381mg/份）",
+    "脂肪供能占 73%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r153",
@@ -14022,7 +17431,29 @@
   "source": "import",
   "source_ref": "蒸菜/蒜蓉粉丝虾.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 429.1,
+    "protein_g": 30.7,
+    "fat_g": 13.8,
+    "carb_g": 42.4,
+    "sodium_mg": 1218.3,
+    "fiber_g": 0.7
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 429.1,
+  "protein_g": 30.7,
+  "health": {
+   "grade": "A",
+   "score": 86,
+   "factors": [
+    "钠略高（1218mg/份）",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r154",
@@ -14094,7 +17525,30 @@
   "source": "import",
   "source_ref": "蒸菜/蒸嫩豆腐.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 126.1,
+    "protein_g": 7.4,
+    "fat_g": 8.5,
+    "carb_g": 5.0,
+    "sodium_mg": 462.9,
+    "fiber_g": 0.4
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 126.1,
+  "protein_g": 7.4,
+  "health": {
+   "grade": "B",
+   "score": 69,
+   "factors": [
+    "脂肪供能占 61%",
+    "蛋白质偏少",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r155",
@@ -14160,7 +17614,28 @@
   "source": "import",
   "source_ref": "蒸菜/豉汁鱼块.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 116.1,
+    "protein_g": 10.7,
+    "fat_g": 3.5,
+    "carb_g": 9.7,
+    "sodium_mg": 368.6,
+    "fiber_g": 2.6
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 116.1,
+  "protein_g": 10.7,
+  "health": {
+   "grade": "A",
+   "score": 100,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r156",
@@ -14252,7 +17727,30 @@
   "source": "import",
   "source_ref": "蒸菜/酱椒蒜香片片鱼.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 84.8,
+    "protein_g": 6.8,
+    "fat_g": 3.1,
+    "carb_g": 7.4,
+    "sodium_mg": 984.8,
+    "fiber_g": 0.8
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 84.8,
+  "protein_g": 6.8,
+  "health": {
+   "grade": "B",
+   "score": 76,
+   "factors": [
+    "钠略高（985mg/份）",
+    "蛋白质偏少",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r157",
@@ -14322,7 +17820,28 @@
   "source": "import",
   "source_ref": "蒸菜/酱香小河虾.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 123.0,
+    "protein_g": 15.9,
+    "fat_g": 3.3,
+    "carb_g": 6.7,
+    "sodium_mg": 355.4,
+    "fiber_g": 0.4
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 123.0,
+  "protein_g": 15.9,
+  "health": {
+   "grade": "A",
+   "score": 92,
+   "factors": [
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r158",
@@ -14392,7 +17911,28 @@
   "source": "import",
   "source_ref": "蒸菜/青椒蒸豆米.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 259.5,
+    "protein_g": 4.7,
+    "fat_g": 11.5,
+    "carb_g": 34.8,
+    "sodium_mg": 818.5,
+    "fiber_g": 1.3
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 259.5,
+  "protein_g": 4.7,
+  "health": {
+   "grade": "A",
+   "score": 86,
+   "factors": [
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r159",
@@ -14460,7 +18000,30 @@
   "source": "import",
   "source_ref": "蒸菜/风干牛肉蒸白干.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 112.5,
+    "protein_g": 13.9,
+    "fat_g": 4.3,
+    "carb_g": 5.0,
+    "sodium_mg": 150.5,
+    "fiber_g": 0.2
+   },
+   "missing": [
+    "白干"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 112.5,
+  "protein_g": 13.9,
+  "health": {
+   "grade": "A",
+   "score": 92,
+   "factors": [
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r160",
@@ -14531,7 +18094,33 @@
   "source": "import",
   "source_ref": "蒸菜/香肠蒸豆干.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 216.7,
+    "protein_g": 11.0,
+    "fat_g": 14.1,
+    "carb_g": 12.1,
+    "sodium_mg": 1319.4,
+    "fiber_g": 0.6
+   },
+   "missing": [
+    "香大元",
+    "调味料"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 216.7,
+  "protein_g": 11.0,
+  "health": {
+   "grade": "B",
+   "score": 73,
+   "factors": [
+    "钠略高（1319mg/份）",
+    "脂肪供能占 59%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r161",
@@ -14620,7 +18209,28 @@
   "source": "import",
   "source_ref": "蒸菜/香肠蒸豆米.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 195.5,
+    "protein_g": 15.4,
+    "fat_g": 11.2,
+    "carb_g": 9.8,
+    "sodium_mg": 675.2,
+    "fiber_g": 2.9
+   },
+   "missing": [],
+   "confidence": "high"
+  },
+  "kcal": 195.5,
+  "protein_g": 15.4,
+  "health": {
+   "grade": "A",
+   "score": 87,
+   "factors": [
+    "脂肪供能占 52%"
+   ]
+  }
  },
  {
   "id": "r162",
@@ -14695,7 +18305,29 @@
   "source": "import",
   "source_ref": "蒸菜/香芋蒸排骨.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 152.2,
+    "protein_g": 5.9,
+    "fat_g": 11.4,
+    "carb_g": 6.1,
+    "sodium_mg": 47.4,
+    "fiber_g": 1.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 152.2,
+  "protein_g": 5.9,
+  "health": {
+   "grade": "B",
+   "score": 73,
+   "factors": [
+    "脂肪供能占 67%",
+    "蛋白质偏少"
+   ]
+  }
  },
  {
   "id": "r163",
@@ -14782,7 +18414,30 @@
   "source": "import",
   "source_ref": "蒸菜/香辣红油鸡（白切鸡版）.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 286.3,
+    "protein_g": 16.1,
+    "fat_g": 21.4,
+    "carb_g": 8.0,
+    "sodium_mg": 1846.3,
+    "fiber_g": 0.1
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 286.3,
+  "protein_g": 16.1,
+  "health": {
+   "grade": "B",
+   "score": 67,
+   "factors": [
+    "钠偏高（1846mg/份）",
+    "脂肪供能占 67%",
+    "膳食纤维很少"
+   ]
+  }
  },
  {
   "id": "r164",
@@ -14860,7 +18515,28 @@
   "source": "import",
   "source_ref": "蒸菜/鸡汁辣鱼.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 322.9,
+    "protein_g": 16.7,
+    "fat_g": 11.5,
+    "carb_g": 35.4,
+    "sodium_mg": 5376.7,
+    "fiber_g": 2.3
+   },
+   "missing": [],
+   "confidence": "medium"
+  },
+  "kcal": 322.9,
+  "protein_g": 16.7,
+  "health": {
+   "grade": "A",
+   "score": 84,
+   "factors": [
+    "钠偏高（5377mg/份）"
+   ]
+  }
  },
  {
   "id": "r165",
@@ -14952,7 +18628,30 @@
   "source": "import",
   "source_ref": "饮品/奶皮子酸奶.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 207.5,
+    "protein_g": 9.2,
+    "fat_g": 9.0,
+    "carb_g": 23.6,
+    "sodium_mg": 448.5,
+    "fiber_g": 1.2
+   },
+   "missing": [
+    "炼乳"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 207.5,
+  "protein_g": 9.2,
+  "health": {
+   "grade": "A",
+   "score": 96,
+   "factors": [
+    "油盐与热量较均衡"
+   ]
+  }
  },
  {
   "id": "r166",
@@ -15018,7 +18717,30 @@
   "source": "import",
   "source_ref": "饮品/酒酿蛋花甜羹.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 242.7,
+    "protein_g": 13.9,
+    "fat_g": 10.9,
+    "carb_g": 23.5,
+    "sodium_mg": 457.9,
+    "fiber_g": 1.0
+   },
+   "missing": [
+    "爽露爽酒酿"
+   ],
+   "confidence": "medium"
+  },
+  "kcal": 242.7,
+  "protein_g": 13.9,
+  "health": {
+   "grade": "A",
+   "score": 89,
+   "factors": [
+    "脂肪供能占 40%"
+   ]
+  }
  },
  {
   "id": "r167",
@@ -15082,6 +18804,30 @@
   "source": "import",
   "source_ref": "饮品/鸡笼香柠檬茶.md",
   "license_note": "菜谱来源：CookLikeHOC 开源菜谱项目（已结构化改写，原始内容版权归原作者）",
-  "verified": false
+  "verified": false,
+  "nutrition": {
+   "per_serving": {
+    "kcal": 300.0,
+    "protein_g": 16.0,
+    "fat_g": 14.0,
+    "carb_g": 30.0,
+    "sodium_mg": 800.3,
+    "fiber_g": 2.0
+   },
+   "missing": [
+    "乌龙茶调味茶饮料",
+    "冰块"
+   ],
+   "confidence": "low"
+  },
+  "kcal": 300.0,
+  "protein_g": 16.0,
+  "health": {
+   "grade": "A",
+   "score": 89,
+   "factors": [
+    "脂肪供能占 42%"
+   ]
+  }
  }
 ]

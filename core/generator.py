@@ -25,11 +25,11 @@ def _relax_line(relaxed):
     return f"没有完全符合的店，已放宽：{detail}。"
 
 
-def generate_reply(message, restaurants, conditions, header_key=None, relaxed=None):
+def generate_reply(message, restaurants, conditions, header_key=None, relaxed=None, total=None):
     """筛选推荐语。relaxed 为结构化对象或 None。返回 (reply, source)"""
     cfg = nlu.load_config()
     key = nlu.resolve_key(header_key)
-    total = len(restaurants)
+    total = total if total is not None else len(restaurants)
     cond_desc = describe_conditions(conditions)
     lead = _relax_line(relaxed)
 

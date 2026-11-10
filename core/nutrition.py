@@ -61,28 +61,79 @@ def match(name):
     return best
 
 
-def _fuzzy_grams(name, people):
+# 主料未标用量时的"每人常规克数"（按食材类别），避免只算成 5g 导致热量严重偏低
+TYPICAL_PER_PERSON = {"主食": 120, "荤": 90, "水产": 90, "蔬菜": 120,
+                      "蛋": 50, "豆制品": 90, "干货": 15, "坚果": 10, "调料": 5}
+
+
+# 食材表里没有时，按名字关键词归类为"近似食材"，避免整条被算成 0 卡
+PROXY_RULES = [
+    (("酱", "汁", "膏", "调料", "底料", "粉包"), {"kcal": 130, "protein_g": 2, "fat_g": 4, "carb_g": 20,
+                                                 "sodium_mg": 3200, "fiber_g": 1, "tags": ["调料"]}),
+    (("肉", "排骨", "肘", "肠", "丸", "排", "鸡", "鸭", "牛", "猪", "羊", "培根", "火腿", "腊"),
+     {"kcal": 200, "protein_g": 15, "fat_g": 14, "carb_g": 4, "sodium_mg": 400, "fiber_g": 0, "tags": ["荤"]}),
+    (("虾", "鱼", "蟹", "贝", "鱿", "墨", "蛤", "蚝", "海参", "鳝", "蛙"),
+     {"kcal": 110, "protein_g": 17, "fat_g": 3, "carb_g": 2, "sodium_mg": 300, "fiber_g": 0, "tags": ["水产"]}),
+    (("面", "粉", "饭", "饼", "馍", "馒", "饺", "包", "粿", "糕", "卷", "米线", "河粉", "粉丝",
+      "乌冬", "意面", "年糕", "麻薯", "米", "燕麦", "麦片"),
+     {"kcal": 220, "protein_g": 6, "fat_g": 2, "carb_g": 45, "sodium_mg": 300, "fiber_g": 1.5, "tags": ["主食"]}),
+    (("蛋",), {"kcal": 143, "protein_g": 13, "fat_g": 9, "carb_g": 1.5, "sodium_mg": 130, "fiber_g": 0, "tags": ["蛋"]}),
+    (("奶", "芝士", "黄油", "奶油"), {"kcal": 250, "protein_g": 5, "fat_g": 20, "carb_g": 10,
+                                     "sodium_mg": 200, "fiber_g": 0, "tags": ["其他"]}),
+    (("菠萝", "苹果", "橙", "柠檬", "芒果", "葡萄", "西瓜", "香蕉", "荔枝", "龙眼", "枣", "莓"),
+     {"kcal": 50, "protein_g": 0.7, "fat_g": 0.2, "carb_g": 12, "sodium_mg": 3, "fiber_g": 1.3, "tags": ["蔬菜"]}),
+    (("菜", "瓜", "豆", "菇", "笋", "茄", "藕", "萝卜", "薯", "芋", "椒", "葱", "蒜", "姜", "耳"),
+     {"kcal": 35, "protein_g": 1.5, "fat_g": 0.3, "carb_g": 6, "sodium_mg": 20, "fiber_g": 2, "tags": ["蔬菜"]}),
+]
+
+
+GENERIC = {"kcal": 150, "protein_g": 8, "fat_g": 7, "carb_g": 15,
+           "sodium_mg": 400, "fiber_g": 1, "tags": ["其他"]}
+
+
+def proxy(name):
+    for keys, data in PROXY_RULES:
+        if any(k in name for k in keys):
+            return dict(data, name=name, aliases=[], proxy=True)
+    # 兜底：按混合菜估算，宁可偏保守也不要算成 0
+    return dict(GENERIC, name=name, aliases=[], proxy=True, generic=True)
+
+
+TYPICAL_PER_PERSON["其他"] = 100
+
+
+def _fuzzy_grams(name, people, entry=None):
     for keys, g in FUZZY_DEFAULT:
         if any(k in name for k in keys):
             return g * max(1, people), True
+    entry = entry or match(name) or proxy(name)
+    tags = (entry or {}).get("tags") or []
+    typical = [TYPICAL_PER_PERSON[t] for t in tags if t in TYPICAL_PER_PERSON]
+    if typical:
+        return min(typical) * max(1, people), True
     return FUZZY_FALLBACK * max(1, people), True
 
 
-def to_grams(ing, people=2):
+# 食材表里没有时，常见计件单位的默认克重
+UNIT_WEIGHT = {"个": 50, "只": 60, "根": 60, "片": 15, "瓣": 5, "朵": 10, "条": 60, "块": 30,
+               "张": 30, "把": 50, "碗": 250, "汤匙": 15, "茶匙": 5, "份": 200}
+
+
+def to_grams(ing, people=2, entry=None):
     """返回 (克数, 是否估算, 是否可信)。无法折算时返回 (None, True, False)。"""
     name = ing.get("name", "")
     amount = ing.get("amount")
     unit = (ing.get("unit") or "").strip().lower()
 
-    entry = match(name)
+    entry = entry or match(name)
     if amount is None or str(amount) in ("适量", "少许", "若干", ""):
-        g, est = _fuzzy_grams(name, people)
+        g, est = _fuzzy_grams(name, people, entry)
         return g, est, True
 
     try:
         amount = float(amount)
     except (TypeError, ValueError):
-        g, est = _fuzzy_grams(name, people)
+        g, est = _fuzzy_grams(name, people, entry)
         return g, est, True
 
     if unit in UNIT_G:
@@ -99,8 +150,11 @@ def to_grams(ing, people=2):
             return amount * dg[unit], False, True
         if len(dg) == 1:  # 只有一种单位时兜底
             return amount * list(dg.values())[0], True, True
+    # 计件单位：用通用克重换算（比直接当克数更接近现实）
+    if unit in UNIT_WEIGHT:
+        return amount * UNIT_WEIGHT[unit], True, True
     # 无单位默认按克
-    if unit in ("", "份", "个", "只", "根", "片", "瓣", "朵", "条", "块", "张", "把", "碗", "汤匙", "茶匙"):
+    if unit in ("", "g", "克"):
         return amount, True, True
     return None, True, False
 
@@ -115,7 +169,13 @@ def compute(recipe, servings=None):
     missing, estimated = [], 0
     for ing in recipe.get("ingredients", []):
         entry = match(ing.get("name", ""))
-        grams, est, ok = to_grams(ing, people=base)
+        if entry is None:
+            entry = proxy(ing.get("name", ""))
+            if entry:
+                estimated += 1
+                if entry.get("generic"):
+                    missing.append(ing.get("name"))
+        grams, est, ok = to_grams(ing, people=base, entry=entry)
         if est:
             estimated += 1
         if grams is None or entry is None:
