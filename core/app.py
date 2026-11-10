@@ -26,7 +26,8 @@ except Exception:
 class ChatRequest(BaseModel):
     message: str
     history: list = []
-    exclude: list = []   # 已展示过的菜谱 id，用于「换一批」
+    exclude: list = []            # 近期展示过的菜谱 id，用于轮换
+    force_mode: str = "auto"      # auto | eat | cook：用户在界面上手动锁定模式
 
 
 @app.get("/api/health")
@@ -100,8 +101,12 @@ async def chat(req: ChatRequest, request: Request = None,
     if not message:
         return JSONResponse(status_code=400, content={"error": "message 不能为空"})
     try:
+        # 模式判定：界面锁定优先 > 关键词自动识别
+        force = (req.force_mode or "auto").lower()
+        to_cook = force == "cook" or (force == "auto" and nlu.COOK_HINTS.search(message))
+
         # 做菜意图预分流（独立 prompt，不动餐厅检索链路，避免评测回归）
-        if nlu.COOK_HINTS.search(message):
+        if to_cook:
             conds, nlu_source = nlu.parse_cook_intent(message, req.history, header_key=x_llm_key)
             env = daily.context()
             ctx = {**conds, "env": env}
@@ -123,6 +128,13 @@ async def chat(req: ChatRequest, request: Request = None,
             }
 
         conditions, nlu_source = nlu.parse_intent(message, req.history, header_key=x_llm_key)
+
+        # 用户锁了「找店」，但模型判成了闲聊：若是求推荐类说法，仍按找店处理
+        if force == "eat" and conditions.get("mode") == "chat" and \
+                any(k in message for k in ("推荐", "吃什么", "吃啥", "好吃", "店", "餐厅")):
+            conditions = {"mode": "filter", "category": None, "keywords": [],
+                          "price_min": None, "price_max": None, "location": None,
+                          "sort": "popular"}
 
         # 对话模式：闲聊 / 追问推荐理由 / 店铺细节
         if conditions.get("mode") == "chat":
