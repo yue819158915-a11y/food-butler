@@ -38,6 +38,12 @@
         </div>
       </div>
     </div>
+    <div class="mode-switch" id="modeSwitch">
+      <button class="mode-btn active" data-mode="auto">自动识别</button>
+      <button class="mode-btn" data-mode="eat">🍽 找店</button>
+      <button class="mode-btn" data-mode="cook">🍳 做饭</button>
+      <span class="mode-tip">选「做饭」就一直给你菜谱，不会跳去推荐餐馆</span>
+    </div>
     <div class="chat-input-wrap">
       <input id="chatInput" type="text" placeholder="告诉我你想吃什么…（口语描述、人群口味都可以）" autocomplete="off">
       <button id="btnSend">发送</button>
@@ -48,6 +54,7 @@
   <aside class="result-panel">
     <h2>🍽 推荐结果</h2>
     <div id="resultCount" class="result-count" aria-live="polite"></div>
+    <div class="result-tools"><button id="btnBrowse" class="ghost small-btn">📚 浏览全部菜谱（167 道）</button></div>
     <div id="resultList" class="result-list"></div>
     <p class="data-note">菜谱来源：像老乡鸡那样做饭（CookLikeHOC），已结构化改写；营养为估算值，非医学建议。</p>
   </aside>

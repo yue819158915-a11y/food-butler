@@ -61,10 +61,9 @@ async function requestChat(message) {
   let lastErr;
   for (let attempt = 1; attempt <= 2; attempt++) {
     try {
-      const wantAnother = /换一批|换一道|换个菜|换个口味|换换口味|别的菜|其他的菜|还有别的|再来一道|还有吗/.test(message);
       const res = await fetch(apiUrl("/api/chat"), {
         method: "POST", headers: headers(),
-        body: JSON.stringify({ message, history, exclude: wantAnother ? shownRecipeIds.slice(-9) : [] }),
+        body: JSON.stringify({ message, history, exclude: recentIds(), force_mode: forceMode }),
       });
       const raw = await res.text();
       if (res.status === 403 || res.status === 401) {
@@ -102,8 +101,15 @@ async function send(message) {
     history.push({ role: "user", text: message });
     history.push({ role: "assistant", text: data.reply, conditions_json: JSON.stringify(data.conditions) });
     if (history.length > 10) history = history.slice(-10);
+    if (data.mode && data.mode !== lastMode && lastMode !== null) {
+      const tip = data.mode === "cook" ? "已切到做饭模式（要回餐厅就说「找店」）" : "已切到餐厅推荐（要菜谱就说「做饭」）";
+      bubble.insertAdjacentHTML("beforeend", `<span class="source-tag">🔄 ${tip}</span>`);
+    }
+    if (data.mode) lastMode = data.mode;
+
     if (data.mode === "cook") {
       renderRecipeCards(data.recipes, "🍳 菜谱推荐");
+      addRecent((data.recipes || []).map(c => (c.full || c.recipe || {}).id));
       if (data.assumptions && data.assumptions.length) {
         bubble.insertAdjacentHTML("beforeend",
           `<span class="source-tag">假设：${esc(data.assumptions.join("；"))}</span>`);
@@ -262,6 +268,17 @@ init();
 /* ---------- 菜谱卡片 ---------- */
 let wxPayload = null;
 let shownRecipeIds = [];
+let forceMode = "auto";     // auto | eat | cook
+let lastMode = null;
+
+const RECENT_KEY = "recent_recipe_ids";
+function recentIds() {
+  try { return JSON.parse(localStorage.getItem(RECENT_KEY) || "[]"); } catch (e) { return []; }
+}
+function addRecent(ids) {
+  const merged = Array.from(new Set([...(ids || []), ...recentIds()])).slice(0, 24);
+  localStorage.setItem(RECENT_KEY, JSON.stringify(merged));
+}
 
 function renderRecipeCards(cards, label = "🍳 菜谱推荐") {
   if (!cards || !cards.length) return;
@@ -374,4 +391,45 @@ document.addEventListener("DOMContentLoaded", () => {
     renderRecipeCards(wxPayload.cards, "🌤 今日推荐");
     addMsg("bot", `根据今天的天气和时段，给你挑了这 ${wxPayload.cards.length} 道 👉 右边可以看食材和步骤`);
   });
+});
+
+
+/* ---------- 模式切换 ---------- */
+document.querySelectorAll(".mode-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    forceMode = btn.dataset.mode;
+    document.querySelectorAll(".mode-btn").forEach(b => b.classList.toggle("active", b === btn));
+    const label = { auto: "自动识别", eat: "找店", cook: "做饭" }[forceMode];
+    addMsg("bot", `好，现在按「${label}」来。${forceMode === "cook" ? "只说菜谱，不会给你推餐馆。" : forceMode === "eat" ? "只说餐厅，不会给你菜谱。" : "看你怎么问。"}`);
+  });
+});
+
+/* ---------- 浏览全部菜谱 ---------- */
+document.getElementById("btnBrowse")?.addEventListener("click", async () => {
+  try {
+    resultCount.textContent = "正在加载全部菜谱…";
+    const data = await (await fetch(apiUrl("/api/recipes?limit=200"))).json();
+    const groups = {};
+    data.recipes.forEach(r => (groups[r.category] = groups[r.category] || []).push(r));
+    resultList.innerHTML = "";
+    Object.keys(groups).sort().forEach(cat => {
+      const h = document.createElement("div");
+      h.className = "cat-group-title";
+      h.textContent = `${cat}（${groups[cat].length}）`;
+      resultList.appendChild(h);
+      groups[cat].forEach(r => {
+        const row = document.createElement("div");
+        row.className = "recipe-row";
+        row.innerHTML = `<span>${esc(r.name)}</span><span class="meta">${r.time_min}分 · ${Math.round(r.kcal || 0)}kcal</span>`;
+        row.addEventListener("click", async () => {
+          const d = await (await fetch(apiUrl(`/api/recipes/${r.id}`))).json();
+          renderRecipeCards([{ full: d, recipe: r, reason: "你挑的" }], "📖 菜谱详情");
+        });
+        resultList.appendChild(row);
+      });
+    });
+    resultCount.textContent = `全部菜谱 · 共 ${data.recipes.length} 道（点击查看详情）`;
+    document.getElementById("btnShuffle")?.setAttribute("hidden", "hidden");
+    document.querySelector(".result-panel").scrollTop = 0;
+  } catch (e) { resultCount.textContent = "加载失败，稍后再试"; }
 });
