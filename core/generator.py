@@ -62,7 +62,11 @@ def generate_reply(message, restaurants, conditions, header_key=None, relaxed=No
                 cfg.get("llm_base_url", "https://open.bigmodel.cn/api/paas/v4"),
                 cfg.get("llm_model", "glm-4-flash"),
                 temperature=0.7, json_mode=False, timeout=12)
-            return content.strip(), "llm"
+            text = content.strip()
+            # 模型偶尔不照 prompt 说明放宽：这里代码兜底，别让它把放宽过的结果说成"完全符合"
+            if lead and not any(k in text for k in ("放宽", "超出", "略高", "预算")):
+                text = f"{lead}{text}"
+            return text, "llm"
         except Exception:
             pass
 

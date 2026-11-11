@@ -4,6 +4,8 @@
 硬约束（永不放宽）：过敏原、忌口
 软约束（打分，可让渡）：时间、预算、健康目标、天气契合、口味偏好、新鲜度
 """
+import zlib
+
 from . import nutrition, recipes
 
 # 粗粒度成本估算（元/100g），用于预算约束；仅作数量级参考
@@ -75,6 +77,7 @@ def plan(ctx=None, n=3, meal=None, exclude=None, seed=0):
     avoid = [a for a in (ctx.get("avoid") or []) if a]
     goal = ctx.get("goal")
     taste = ctx.get("taste") or {}
+    kws = [k for k in (ctx.get("keywords") or []) if k]
 
     env = ctx.get("env") or {}
     mood = env.get("mood") or "mild"
@@ -116,6 +119,15 @@ def plan(ctx=None, n=3, meal=None, exclude=None, seed=0):
             s += 0.10 * max(0.0, 1 - r["_cost"] / max(1, budget))
         hit = sum(w for tag, w in (taste or {}).items() if tag in (r.get("tags") or []) or tag == r.get("category"))
         s += 0.10 * min(1.0, hit)
+        # 用户明确说的东西（"想喝汤""想吃面"）权重最高，软加权不硬过滤，避免凑不满 3 道
+        if kws:
+            name = r.get("name") or ""
+            cat = r.get("category") or ""
+            tags = r.get("tags") or []
+            if any(k in name or k in cat or cat in k for k in kws):
+                s += 0.45
+            elif any(any(k in t for t in tags) for k in kws):
+                s += 0.20
         # 营养可信度：估算项越多越降权，避免"炸鸡面 123kcal"这类误导读分
         conf = (r.get("nutrition") or {}).get("confidence")
         if conf == "low":
@@ -131,7 +143,8 @@ def plan(ctx=None, n=3, meal=None, exclude=None, seed=0):
         if r["id"] in exclude:
             s -= 0.55
         # 抖动：分数接近的菜在不同轮次轮换；种子随对话推进变化
-        jitter = ((hash(r["name"] + str(seed)) % 1000) / 1000.0) * 0.18
+        # 用 crc32 而不是 hash()：字符串 hash 每次启动都随机化，会让同一问题得到不同结果
+        jitter = ((zlib.crc32((r["name"] + str(seed)).encode("utf-8")) % 1000) / 1000.0) * 0.18
         scored.append((s + jitter, r))
 
     scored.sort(key=lambda x: -x[0])
