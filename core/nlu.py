@@ -73,6 +73,11 @@ SYSTEM_PROMPT = """你是广州美食查询解析器，服务广州本地食客�
   * 怕辣/不吃辣 → type 倾向 粤菜/早茶/甜品
   * 想吃硬菜/大餐 → type=粤菜，price_min 设 100
   * ⚠️ 只用具体菜品或菜系名，**不要臆造「清淡」「锅气」「氛围」「安静」这类形容词**——收录数据里没有这些词，会导致直接查不到
+- 【品类词必须保留，不许丢】用户说的具体品类名要原样写进 keywords，即使 11 个类目里没有对应项：
+  * 自助餐/放题/任食/buffet → keywords 写 "自助"
+  * 肠粉、拉肠、烧鹅、白切鸡、牛杂、云吞面、煲仔饭、生滚粥、糖水、双皮奶、刺身 → 原词写进 keywords
+  * 这类词是跨类目的（自助餐可能落在火锅、早茶或"其他"里），所以**同时把 type 留 null**，靠 keywords 匹配；
+    绝不允许因为"没有这个类目"就不填 keywords，那样会退化成按价格随便返回一堆无关餐厅
 - keywords 是「或」关系（命中任一即可），所以可以给 2~4 个候选词，不必互相收窄
 - "最便宜/性价比" → sort="cheap"；"人气高/最火" → sort="popular"；"贵的那档" → sort="expensive"
 - 指代消解："再便宜点的""换一家"要结合历史条件在上一轮基础上修改
@@ -80,6 +85,37 @@ SYSTEM_PROMPT = """你是广州美食查询解析器，服务广州本地食客�
 输出 JSON（只输出 JSON，不要多余文字）：
 {"mode":"filter"|"chat","type":string|null,"keywords":string[],"price_min":int|null,"price_max":int|null,"location":string|null,"sort":"cheap"|"expensive"|"popular"|null}
 没有对应条件就填 null。"""
+
+# 原句里出现就必须保留的品类词（模型偶尔会漏抽，代码兜底回填）
+DISH_FALLBACK = {
+    "自助": ("自助", "放题", "任食", "buffet", "任吃"),
+    "肠粉": ("肠粉", "拉肠"),
+    "烧鹅": ("烧鹅", "烧鸭"),
+    "牛杂": ("牛杂", "牛三星"),
+    "煲仔饭": ("煲仔饭",),
+    "云吞面": ("云吞面", "细蓉"),
+    "糖水": ("糖水",),
+    "双皮奶": ("双皮奶", "姜撞奶"),
+    "白切鸡": ("白切鸡",),
+    "刺身": ("刺身", "鱼生"),
+}
+
+
+def backfill_keywords(message, conditions):
+    """确保品类词不因模型漏抽而消失。"""
+    if not conditions or conditions.get("mode") != "filter":
+        return conditions
+    kws = list(conditions.get("keywords") or [])
+    joined = "".join(kws)
+    for canon, triggers in DISH_FALLBACK.items():
+        if canon in joined:
+            continue
+        if any(t in message for t in triggers):
+            kws.append(canon)
+            joined += canon
+    conditions["keywords"] = kws[:6]
+    return conditions
+
 
 CATEGORIES = store.CATEGORIES
 _SORTS = {"cheap", "expensive", "popular"}
@@ -161,12 +197,12 @@ def parse_intent(message: str, history=None, header_key=None):
             data = json.loads(text)
             if not isinstance(data, dict):
                 raise ValueError("not a json object")
-            return _inherit(_validate(data), prev), "llm"
+            return _inherit(backfill_keywords(message, _validate(data)), prev), "llm"
         except Exception:
             continue
     conditions = synonyms.parse_local(message)
     conditions["mode"] = "filter"
-    return _inherit(conditions, prev), "rule"
+    return _inherit(backfill_keywords(message, conditions), prev), "rule"
 
 
 def _last_conditions(history):

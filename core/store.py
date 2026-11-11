@@ -23,6 +23,33 @@ CATEGORIES = ["粤菜", "早茶", "火锅", "海鲜", "甜品", "小吃", "烧�
 
 MAX_PRICE_RELAX = max(RELAX_LADDER)  # 0.50
 
+# 品类关键词：决定"想吃什么类型"，放宽时不能静默丢弃（否则"自助餐"会变成随便一家店）
+STRONG_KEYWORDS = {
+    "自助餐", "自助", "放题", "任食", "buffet",
+    "早茶", "点心", "火锅", "打边炉", "烧烤", "烤串", "宵夜",
+    "海鲜", "刺身", "日料", "寿司", "茶餐厅", "甜品", "糖水",
+    "肠粉", "拉肠", "粥", "粉面", "烧鹅", "白切鸡", "牛杂", "云吞面",
+    "煲仔饭", "粤菜", "潮汕", "顺德菜", "川菜", "湘菜", "牛肉火锅",
+}
+
+# 同义展开：关键词按"命中任一即算"，避免「自助餐」只匹配到写成「自助」的店
+KW_ALIAS = {
+    "自助餐": ["自助", "放题", "任食"],
+    "自助": ["自助餐", "放题", "任食"],
+    "放题": ["自助", "任食"],
+    "任食": ["自助", "放题"],
+    "打边炉": ["火锅"],
+}
+
+
+def expand_keywords(keywords):
+    out = []
+    for k in keywords:
+        for v in [k] + KW_ALIAS.get(k, []):
+            if v not in out:
+                out.append(v)
+    return out
+
 
 def load():
     global _restaurants
@@ -84,6 +111,18 @@ def count_keyword_hits(r, keywords):
     return sum(1 for kw in keywords if kw and kw in text)
 
 
+# 业态词：用户说了就必须满足，不能靠"命中别的词"混过去（自助餐最容易出这个问题）
+MUST_KEYWORDS = {"自助", "自助餐", "放题", "任食", "buffet"}
+
+
+def _hit_must(r, keywords):
+    must = [k for k in keywords if k in MUST_KEYWORDS]
+    if not must:
+        return True
+    text = r["search_text"]
+    return any(k in text for k in must)
+
+
 def _hit_keywords_or(r, keywords):
     """OR 语义：命中任一即通过。这是 R3a 的临时方案，
     等 M2 的标签就绪后升级为加权（见 P1-3 的 R3b）。"""
@@ -121,6 +160,8 @@ def _run(category, location, pmin, pmax, keywords):
             continue
         if not _hit_price(r, pmin, pmax):
             continue
+        if not _hit_must(r, keywords):
+            continue
         if not _hit_keywords_or(r, keywords):
             continue
         out.append(r)
@@ -136,8 +177,12 @@ def _region_of_location(location):
 
 
 def _nearest(category, pmax, pmin, keywords, n=3):
-    """保留硬维度（类目），按价格贴近程度给最接近的几家。"""
+    """保留硬维度（类目 + 品类词），按价格贴近程度给最接近的几家。"""
     pool = [r for r in load() if _hit_category(r, category)]
+    if keywords:
+        same = [r for r in pool if _hit_keywords_or(r, keywords)]
+        if same:                    # 有同品类的店就只在里面挑，不要拿无关店凑数
+            pool = same
     if not pool:
         return []
     target = pmax if pmax is not None else pmin
@@ -170,7 +215,7 @@ def filter_restaurants(category=None, price_min=None, price_max=None, location=N
       "nearest": [...]                    # 仅当确实无解时非空
     }
     """
-    keywords = [k for k in (keywords or []) if k]
+    keywords = expand_keywords([k for k in (keywords or []) if k])
 
     # 第一次：严格
     strict = _run(category, location, price_min, price_max, keywords)
@@ -178,20 +223,35 @@ def filter_restaurants(category=None, price_min=None, price_max=None, location=N
         res = _sort(strict, sort, {id(r): count_keyword_hits(r, keywords) for r in strict})
         return (res[:limit] if limit else res), None
 
-    # 逐级放宽：关键词 → 价格阶梯 → 地点一级
-    attempts = []
-    if keywords:
-        attempts.append((dict(keywords=[]),
-                         ["keywords"],
-                         f"已忽略关键词「{'、'.join(keywords)}」"))
-    if price_max is not None or price_min is not None:
+    strong = [k for k in keywords if k in STRONG_KEYWORDS]
+    weak = [k for k in keywords if k not in STRONG_KEYWORDS]
+    has_price = price_max is not None or price_min is not None
+
+    def _price_steps(keep_kw, dropped_prefix):
+        steps = []
         for pct in RELAX_LADDER:
             hi2 = round(price_max * (1 + pct)) if price_max is not None else None
             lo2 = round(price_min * (1 - pct)) if price_min is not None else None
             desc = (f"价格上限 {price_max} → {hi2}（+{int(pct * 100)}%）" if hi2 is not None
                     else f"价格下限 {price_min} → {lo2}（-{int(pct * 100)}%）")
-            dropped = (["keywords"] if keywords else []) + ["price"]
-            attempts.append((dict(keywords=[], price_min=lo2, price_max=hi2), dropped, desc))
+            steps.append((dict(keywords=keep_kw, price_min=lo2, price_max=hi2),
+                          list(dropped_prefix) + ["price"], desc))
+        return steps
+
+    attempts = []
+    # 有品类词（自助餐、肠粉、烧鹅…）时：先在价格上让步，品类一个字都不丢
+    if strong and has_price:
+        attempts += _price_steps(keywords, [])
+    # 弱关键词可以放弃，品类词保留
+    if weak:
+        attempts.append((dict(keywords=strong), ["keywords"],
+                         f"已忽略关键词「{'、'.join(weak)}」"))
+    # 没有品类词时，才允许把关键词整体丢掉（老逻辑）
+    if keywords and not strong:
+        attempts.append((dict(keywords=[]), ["keywords"],
+                         f"已忽略关键词「{'、'.join(keywords)}」"))
+    if has_price and not strong:
+        attempts += _price_steps([], ["keywords"] if keywords else [])
 
     region = _region_of_location(location) if location else None
     if region:

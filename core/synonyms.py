@@ -36,6 +36,14 @@ from .rules import price_window
 
 _NOT_LIMIT = ("超过", "以上", "起码", "至少")
 
+# 类目体系里没有、但决定"想吃什么"的品类词。丢掉它们会答非所问（如"自助餐"被忽略后返回普通餐馆）
+DISH_WORDS = [
+    "自助餐", "自助", "放题", "任食",
+    "肠粉", "拉肠", "生滚粥", "砂锅粥", "及第粥", "艇仔粥",
+    "烧鹅", "白切鸡", "牛杂", "云吞面", "煲仔饭", "糖水",
+    "双皮奶", "姜撞奶", "刺身", "寿司", "点心", "布拉肠",
+]
+
 
 def parse_local(message: str):
     """本地规则解析，返回 conditions dict（字段同 LLM 输出 schema）"""
@@ -87,7 +95,10 @@ def parse_local(message: str):
     elif re.search(r"人气|最火|推荐最多|爆款", message):
         conditions["sort"] = "popular"
 
-    # 关键词：提取引号内的词作为菜品关键词
+    # 关键词：引号内的词 + 品类词（后者保证"自助餐"这类词不会被当成噪音丢掉）
     kw = re.findall(r"[「『\"“]([^」』\"”]{2,12})[」』\"”]", message)
+    for w in DISH_WORDS:
+        if w in message and w not in kw:
+            kw.append(w)
     conditions["keywords"] = kw
     return conditions

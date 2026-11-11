@@ -54,6 +54,7 @@ def generate_reply(message, restaurants, conditions, header_key=None, relaxed=No
                 "请用轻松口语化的简体中文（普通话，不要用粤语词，可带少量 emoji）回复："
                 "先一句话概括筛选条件与总数，再重点推荐 2~3 家（说明人均和亮点）。"
                 "注意：只能使用上面候选里出现的信息；营业时间、预约、地址、电话等若候选里没写就不要提，严禁编造。"
+                f"候选只有 {total} 家时，就只介绍这 {'1' if total == 1 else total} 家，不要说「还有一家」「另外几家」这类话。"
                 "结尾可以问是否要看更多或换条件。控制在 180 字内。"
             )
             content = nlu.call_llm(
