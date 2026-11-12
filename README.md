@@ -16,9 +16,12 @@
 - **部署**：见 `deploy/README.md`。本应用已容器化（`Dockerfile` + `render.yaml`），镜像内自带全部数据，
   不依赖本机文件、外部数据库或登录体系，可直接部署到 Render / 任何支持 Docker 的平台 / 云服务器。
 - **链接**：部署后为公开地址，无需 sharecode，无痕窗口可直接打开；更新请用「重新部署」而非新建服务，保持链接不变。
-- **数据合规**：餐厅推荐内容来自公开点评与学生自整理，已去除校名与个人信息；菜谱来自 CookLikeHOC 开源项目并经结构化改写，
-  已去除品牌与企业信息，仅保留项目署名；营养数值为估算，不构成医疗建议。
+- **数据合规**：餐厅推荐内容来自公开点评与学生自整理，已去除校名与个人信息；菜谱素材来自公开项目 CookLikeHOC
+  （该仓库未声明标准开源许可证），仅提取食材、用量、步骤等事实性信息做结构化改写，已去除品牌与企业信息并保留原始路径以便追溯；
+  营养数值为估算，不构成医疗建议。完整的第三方组件、外部服务与数据授权说明见 `THIRD_PARTY_NOTICES.md`。
+- **代码许可**：源代码以 MIT 发布，见 `LICENSE`；`data/` 下的数据集不在 MIT 授权范围内。
 - **LLM Key**：只通过环境变量 `LLM_KEY` 注入，不写入仓库（`config.json` 已在 `.gitignore` / `.dockerignore` 中排除）。
+  对外分发的源码包与公开仓库内的配置文件不含任何密钥。
 
 ## v5 升级：从「觅食」到「饮食管家」P0（2026-11）
 
@@ -43,7 +46,8 @@ python tools/validate_recipes.py     # 10 项校验，errors 阻断入库
 新增接口：`GET /api/recipes`、`GET /api/recipes/{id}?servings=`、`GET /api/recommend`；
 `POST /api/chat` 增加 `mode="cook"`（正则预分流，不影响餐厅检索评测基线）。
 
-**数据来源与免责**：菜谱来自开源项目 CookLikeHOC（像老乡鸡那样做饭），经结构化改写后使用；
+**数据来源与免责**：菜谱素材来自公开项目 CookLikeHOC（像老乡鸡那样做饭；经核查该仓库未声明标准开源许可证），
+仅提取食材、用量、步骤等事实性信息经结构化改写后使用，不复制其版式、图片与商标，使用方式与下架承诺见 `THIRD_PARTY_NOTICES.md`；
 营养为按食材表估算，非医学建议；过敏原信息来自食材推导，请以实际配料表为准。
 
 ## v4 数据更新（2026-11）
@@ -101,12 +105,13 @@ python eval/test_rules.py     # 取窗与价格解析的纯函数单测
 
 ## 安全说明
 
-**`config.json` 里的 `llm_key` 已置空。** 原 Key 曾随源码包分发，应视为已泄露，请到智谱后台重置。
+**对外分发的源码包与公开仓库中，`config.json` 不含任何密钥。** 该文件已被 `.gitignore` / `.dockerignore` 排除，
+发布包中只提供 `config.example.json`（字段结构与空值）。Key 从未提交到 GitHub 历史。
 
 恢复 AI 对话有两种方式：
 
 1. 环境变量（推荐，不落盘）：`LLM_KEY=你的key python app.py`
-2. 写进 `config.json` 的 `llm_key` 字段（仅本地开发用）
+2. 本地开发时临时写进 `config.json` 的 `llm_key` 字段（该文件不会入库，也不会进镜像）
 
 Key 优先级：请求头 `X-LLM-Key` > 环境变量 `LLM_KEY`/`ZHIPU_API_KEY` > `config.json`。
 无 Key 时自动降级到本地词库模式：筛选、放宽提示、无解兜底全部正常，只有闲聊与自由生成话术不可用。
@@ -163,7 +168,8 @@ python app.py            # 默认 8000 端口，也可 PORT=9000 python app.py
 - Key 也可不配：页面右上角 ⚙️ 可让每个访客自带 Key（存浏览器 localStorage，随请求头传输）
 - 无任何 Key 时自动降级为本地词库模式，功能照常
 
-⚠️ **当前 zip 内的 config.json 含真实 API Key，请勿公开传播；对外分享请把 llm_key 置空。**
+📦 对外交付的源码包已排除 `config.json`、本地数据库与缓存文件，配置模板见仓库根目录的 `config.example.json`。
+若你曾在本地填入 Key，请勿把该文件一并打包外发。
 
 ## 修改指引（常见需求）
 

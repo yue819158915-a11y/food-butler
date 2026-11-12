@@ -59,7 +59,7 @@ function addMsg(role, text, extraHTML = "") {
 /* 带重试的聊天请求：网关超时/返回非 JSON 时自动再试一次 */
 async function requestChat(message) {
   let lastErr;
-  for (let attempt = 1; attempt <= 2; attempt++) {
+  for (let attempt = 1; attempt <= 3; attempt++) {
     try {
       const res = await fetch(apiUrl("/api/chat"), {
         method: "POST", headers: headers(),
@@ -71,12 +71,18 @@ async function requestChat(message) {
         err.fatal = true;            // 凭证失效重试无意义
         throw err;
       }
+      if (res.status === 502 || res.status === 503 || res.status === 504) {
+        // 网关活着、后端容器被平台回收：等几秒让它重新起来，比直接报错友好
+        const err = new Error(`网关 ${res.status}`);
+        err.wake = true;
+        throw err;
+      }
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return JSON.parse(raw);          // 非 JSON（网关错误页）会在这里抛错
     } catch (e) {
       lastErr = e;
       if (e.fatal) break;
-      if (attempt < 2) await new Promise(r => setTimeout(r, 800));
+      if (attempt < 3) await new Promise(r => setTimeout(r, e.wake ? 4000 : 800));
     }
   }
   throw lastErr;
@@ -88,8 +94,14 @@ async function send(message) {
   addMsg("user", message);
   chatInput.value = "";
   const typing = addMsg("bot", "想想… 🤔");
+  // 免费实例休眠后首次请求要等 30 秒左右，中途给个说明，别让人以为挂了
+  const wakeTimer = setTimeout(() => {
+    const b = typing.querySelector(".bubble");
+    if (b && busy) b.textContent = "服务在唤醒，首次访问大概要等 30 秒，稍等一下…";
+  }, 4000);
   try {
     const data = await requestChat(message);
+    clearTimeout(wakeTimer);
     typing.querySelector(".bubble").textContent = "";
     const bubble = typing.querySelector(".bubble");
     bubble.textContent = data.reply;
@@ -121,6 +133,10 @@ async function send(message) {
     if (e.fatal) {
       bubble.textContent = "访问链接的凭证已失效。请用带 ?sharecode= 的完整链接重新打开页面" +
         "（直接从群里那条完整链接点进来即可），然后刷新一次。";
+    } else if (e.wake) {
+      bubble.innerHTML = '平台把这个闲置实例回收了，自动重连三次没成功。' +
+        '换用备用地址即可，数据和功能完全一样：' +
+        '<a href="https://food-butler.onrender.com" target="_blank" rel="noopener">food-butler.onrender.com</a>';
     } else {
       bubble.textContent = "这次响应太慢了（网络或服务繁忙），右边先保留上一次的结果。" +
         "把问题再发一次通常就好了 👇";
@@ -128,6 +144,7 @@ async function send(message) {
     }
     bubble.insertAdjacentHTML("beforeend", `<span class="source-tag">请求失败 · ${esc(e.message || "超时")}</span>`);
   } finally {
+    clearTimeout(wakeTimer);
     busy = false; btnSend.disabled = false;
     chatInput.focus();
   }
@@ -433,3 +450,12 @@ document.getElementById("btnBrowse")?.addEventListener("click", async () => {
     document.querySelector(".result-panel").scrollTop = 0;
   } catch (e) { resultCount.textContent = "加载失败，稍后再试"; }
 });
+
+/* ---------- 实例保活 ----------
+   沙箱实例在长时间无请求时会被平台回收，表现为 502。
+   页面开着的时候每 3 分钟轻探一次健康接口，让实例保持活跃。 */
+setInterval(() => {
+  if (document.visibilityState === "visible") {
+    fetch(apiUrl("/api/health"), { cache: "no-store" }).catch(() => {});
+  }
+}, 180000);
